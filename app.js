@@ -218,6 +218,8 @@ function renderStudyCard() {
   if (flipCard) flipCard.classList.remove('flipped');
 
   setText('question-front', q.question);
+  const imgCont = document.getElementById('card-image-container');
+  if (imgCont) imgCont.innerHTML = q.image ? `<img src="${q.image}" style="max-width:100%;border-radius:8px;">` : '';
   setText('question-answer', q.answers.find(a => a.correct)?.text || '—');
   setText('cards-current', state.currentIndex + 1);
 
@@ -280,6 +282,8 @@ function renderQuizQuestion() {
 
   state.quizAnswered = false;
   setText('quiz-question-text', q.question);
+  const qImg = document.getElementById('quiz-image-container');
+  if (qImg) qImg.innerHTML = q.image ? `<img src="${q.image}" style="max-width:100%;border-radius:8px;">` : '';
   setText('quiz-current', state.currentIndex + 1);
   setText('quiz-score-display', `${state.quizCorrect} правильних`);
 
@@ -423,6 +427,8 @@ function renderTestQuestion() {
 
   setText('current-q-num', state.testIndex + 1);
   setText('test-question-text', q.question);
+  const testImg = document.getElementById('test-image-container');
+  if (testImg) testImg.innerHTML = q.image ? `<img src="${q.image}" style="max-width:100%;border-radius:8px;">` : '';
 
   const card = document.getElementById('question-card');
   if (card) {
@@ -532,6 +538,7 @@ function finishTest() {
       list.innerHTML = mistakes.map(m => `
         <div class="mistake-item">
           <div class="mistake-q">❓ ${m.question.question}</div>
+          ${m.question.image ? `<div style="text-align:center;margin:10px 0;"><img src="${m.question.image}" style="max-width:100%;border-radius:8px;max-height:150px"></div>` : ''}
           <div class="mistake-answers">
             <div class="mistake-answer user-answer">
               ❌ Ваша відповідь: ${m.userAnswerText}
