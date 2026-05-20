@@ -496,10 +496,12 @@ body::after {
 .flip-card-wrapper {
   perspective: 1200px;
   margin-bottom: 32px;
+  height: 420px; /* Elegant fixed height on desktop to prevent 3D flip sizing glitches */
 }
 
 .flip-card {
   width: 100%;
+  height: 100%;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
@@ -511,7 +513,10 @@ body::after {
 }
 
 .flip-card-face {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
   width: 100%;
+  height: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   background: var(--bg-card);
@@ -527,14 +532,10 @@ body::after {
 }
 
 .flip-card-front {
-  position: relative;
-  min-height: 320px;
+  background: var(--bg-card);
 }
 
 .flip-card-back {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  height: 100%;
   transform: rotateY(180deg);
   background: linear-gradient(135deg, rgba(108, 99, 255, 0.1), rgba(30, 144, 255, 0.05));
   border-color: var(--border-accent);
@@ -570,9 +571,16 @@ body::after {
 }
 
 .flip-card-face img {
-  max-height: 180px;
+  max-height: 150px;
   width: auto;
   object-fit: contain;
+  border-radius: var(--radius-sm);
+  margin-top: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+.flip-card-face img:hover {
+  transform: scale(1.02);
 }
 
 /* Answer options in study mode */
@@ -781,12 +789,31 @@ body::after {
 }
 
 .question-image {
-  width: 100%;
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
   max-height: 280px;
   object-fit: contain;
   border-radius: var(--radius-md);
-  margin: 20px 0;
-  background: rgba(255,255,255,0.03);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border);
+  transition: transform 0.3s ease;
+}
+.question-image:hover {
+  transform: scale(1.01);
+}
+
+.mistake-image-wrapper {
+  text-align: center;
+  margin: 12px 0;
+}
+.mistake-image {
+  max-width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border);
 }
 
 /* Test Results */
@@ -1065,8 +1092,9 @@ body::after {
   .stats-bar { gap: 24px; }
   .test-header { flex-direction: column; gap: 12px; align-items: flex-start; }
   .timer { align-self: flex-end; margin-top: -34px; }
-  .flip-card-front { min-height: 280px; }
+  .flip-card-wrapper { height: 380px; }
   .flip-card-face { padding: 24px; }
+  .flip-card-face img { max-height: 120px; }
   .flip-content { font-size: 18px; }
   .page-header-inner { flex-direction: column; align-items: flex-start; }
   .page-header-inner .back-btn { margin-bottom: 12px; }
@@ -1127,10 +1155,12 @@ body::after {
   .mode-btn { flex: 1; padding: 10px 0; font-size: 13px; }
   
   /* Flip Card sizing for iPhone 14 */
-  .flip-card-front { min-height: 260px; }
+  .flip-card-wrapper { height: 350px; }
   .flip-card-face { padding: 20px; }
-  .flip-content { font-size: 16px; }
-  .flip-card-back .flip-content { font-size: 15px; }
+  .flip-card-face img { max-height: 100px; }
+  .flip-content { font-size: 15px; }
+  .flip-card-back .flip-content { font-size: 14px; }
+  .question-image { max-height: 160px; margin: 12px auto; }
   
   /* Actions buttons row */
   #cards-mode > div:nth-child(3) { flex-direction: column; gap: 12px; margin-bottom: 32px; }
