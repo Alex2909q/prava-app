@@ -26,6 +26,8 @@ const state = {
   timeLeft: 20 * 60,
   testStartTime: null,
   isFullTest: false,
+  isSimulation: false,
+  simMistakes: 0,
 };
 
 // ─── LocalStorage helpers ─────────────────────────────────────
@@ -42,6 +44,41 @@ const LS = {
   setResults(r) { LS.set('pdr_results', r); },
   getLearnedCards() { return LS.get('pdr_learned', {}); },
   setLearnedCards(l) { LS.set('pdr_learned', l); },
+  getMistakes() { return LS.get('pdr_mistakes', []); },
+  setMistakes(m) { LS.set('pdr_mistakes', m); },
+  addMistake(id) {
+    const m = LS.getMistakes();
+    if (!m.includes(id)) {
+      m.push(id);
+      LS.setMistakes(m);
+    }
+  },
+  removeMistake(id) {
+    const m = LS.getMistakes();
+    const idx = m.indexOf(id);
+    if (idx !== -1) {
+      m.splice(idx, 1);
+      LS.setMistakes(m);
+    }
+  },
+  getStarred() { return LS.get('pdr_starred', []); },
+  setStarred(s) { LS.set('pdr_starred', s); },
+  toggleStarred(id) {
+    const s = LS.getStarred();
+    const idx = s.indexOf(id);
+    let starred = false;
+    if (idx !== -1) {
+      s.splice(idx, 1);
+    } else {
+      s.push(id);
+      starred = true;
+    }
+    LS.setStarred(s);
+    return starred;
+  },
+  isStarred(id) {
+    return LS.getStarred().includes(id);
+  }
 };
 
 // ─── Utils ───────────────────────────────────────────────────
@@ -62,6 +99,10 @@ function isFullTestMode() {
   return new URLSearchParams(location.search).get('full') === '1';
 }
 
+function isSimulationMode() {
+  return new URLSearchParams(location.search).get('sim') === '1';
+}
+
 function formatTime(seconds) {
   const m = Math.floor(seconds / 60).toString().padStart(2, '0');
   const s = (seconds % 60).toString().padStart(2, '0');
@@ -75,6 +116,43 @@ function showToast(msg, type = 'info') {
   el.className = `toast show ${type}`;
   setTimeout(() => { el.className = 'toast'; }, 3000);
 }
+
+function getQuestionById(qId) {
+  for (const block of QUESTIONS_DATA.blocks) {
+    const q = block.questions.find(item => item.id === qId);
+    if (q) return { q, block };
+  }
+  return null;
+}
+
+function getBlockForQuestion(q) {
+  if (!q) return null;
+  return QUESTIONS_DATA.blocks.find(b => b.questions.some(item => item.id === q.id));
+}
+
+function getPdrSectionUrl(block) {
+  if (!block) return 'https://vodiy.ua/pdr/';
+  const numMatch = block.title.match(/^(\d+)/);
+  if (numMatch) {
+    return `https://vodiy.ua/pdr/${numMatch[1]}/`;
+  }
+  return 'https://vodiy.ua/pdr/';
+}
+
+function toggleStarQuestion(qId, btnId) {
+  const starred = LS.toggleStarred(qId);
+  const btn = document.getElementById(btnId);
+  if (btn) {
+    btn.classList.toggle('starred', starred);
+    btn.innerHTML = starred ? '⭐' : '☆';
+  }
+  showToast(starred ? '⭐ Додано у вибране' : '☆ Вилучено з вибраного', 'success');
+  // Update counts on home page if we are there
+  if (typeof renderBlocks === 'function') {
+    updateGlobalStats();
+  }
+}
+
 
 // ─── Home Page ────────────────────────────────────────────────
 function renderBlocks() {
@@ -142,6 +220,37 @@ function updateGlobalStats() {
   setText('total-blocks', totalBlocks);
   setText('total-tested', progressPct + '%');
   setText('best-score', best);
+
+  // Premium metrics
+  const mistakes = LS.getMistakes();
+  const mistakesCount = mistakes.length;
+  setText('mistakes-stat-count', `${mistakesCount} питань`);
+  const mistakesBtn = document.getElementById('btn-mistakes-practice');
+  if (mistakesBtn) {
+    mistakesBtn.disabled = mistakesCount === 0;
+    if (mistakesCount > 0) {
+      mistakesBtn.classList.remove('btn-secondary');
+      mistakesBtn.classList.add('btn-primary');
+    } else {
+      mistakesBtn.classList.remove('btn-primary');
+      mistakesBtn.classList.add('btn-secondary');
+    }
+  }
+
+  const starred = LS.getStarred();
+  const starredCount = starred.length;
+  setText('starred-stat-count', `${starredCount} питань`);
+  const starredBtn = document.getElementById('btn-starred-practice');
+  if (starredBtn) {
+    starredBtn.disabled = starredCount === 0;
+    if (starredCount > 0) {
+      starredBtn.classList.remove('btn-secondary');
+      starredBtn.classList.add('btn-primary');
+    } else {
+      starredBtn.classList.remove('btn-primary');
+      starredBtn.classList.add('btn-secondary');
+    }
+  }
 }
 
 function setText(id, val) {
@@ -161,11 +270,29 @@ function startFullTest() {
   location.href = `test.html?full=1`;
 }
 
+function startSimulation() {
+  location.href = `test.html?sim=1`;
+}
+
+function startMistakesPractice() {
+  const mistakes = LS.getMistakes();
+  if (mistakes.length === 0) return;
+  location.href = `study.html?block=mistakes`;
+}
+
+function startStarredPractice() {
+  const starred = LS.getStarred();
+  if (starred.length === 0) return;
+  location.href = `study.html?block=starred`;
+}
+
 function resetAllProgress() {
   if (!confirm('Скинути весь прогрес вивчення та результати тестів?')) return;
   localStorage.removeItem('pdr_progress');
   localStorage.removeItem('pdr_results');
   localStorage.removeItem('pdr_learned');
+  localStorage.removeItem('pdr_mistakes');
+  localStorage.removeItem('pdr_starred');
   renderBlocks();
   updateGlobalStats();
   showToast('Прогрес скинуто', 'success');
@@ -174,8 +301,25 @@ function resetAllProgress() {
 // ─── Study Page ───────────────────────────────────────────────
 function initStudyPage() {
   const blockId = getBlockId();
-  const block = QUESTIONS_DATA.blocks.find(b => b.id === blockId);
+  let block = null;
+  if (blockId === 'mistakes') {
+    const mistakeIds = LS.getMistakes();
+    const questions = mistakeIds.map(id => getQuestionById(id)?.q).filter(Boolean);
+    block = { id: 'mistakes', title: '📝 Робота над помилками', questions };
+  } else if (blockId === 'starred') {
+    const starredIds = LS.getStarred();
+    const questions = starredIds.map(id => getQuestionById(id)?.q).filter(Boolean);
+    block = { id: 'starred', title: '⭐ Вибрані питання', questions };
+  } else {
+    block = QUESTIONS_DATA.blocks.find(b => b.id === blockId);
+  }
+
   if (!block) { showToast('Блок не знайдено', 'error'); return; }
+  if (block.questions.length === 0) {
+    showToast('У цьому розділі немає питань', 'warning');
+    setTimeout(() => { location.href = 'index.html'; }, 1500);
+    return;
+  }
 
   state.currentBlock = block;
   state.currentQuestions = [...block.questions];
@@ -188,9 +332,20 @@ function initStudyPage() {
   setText('quiz-total', block.questions.length);
 
   const testLink = document.getElementById('test-link');
-  if (testLink) testLink.href = `test.html?block=${blockId}`;
+  if (testLink) {
+    if (blockId === 'mistakes' || blockId === 'starred') {
+      testLink.style.display = 'none';
+    } else {
+      testLink.href = `test.html?block=${blockId}`;
+    }
+  }
   const goTestBtn = document.getElementById('go-to-test-btn');
-  if (goTestBtn) goTestBtn.dataset.block = blockId;
+  if (goTestBtn) {
+    goTestBtn.dataset.block = blockId;
+    if (blockId === 'mistakes' || blockId === 'starred') {
+      goTestBtn.style.display = 'none';
+    }
+  }
 
   renderStudyCard();
   renderLearnedCount();
@@ -230,6 +385,23 @@ function renderStudyCard() {
   setText('question-answer', q.answers.find(a => a.correct)?.text || '—');
   setText('cards-current', state.currentIndex + 1);
 
+  // Update Star Button
+  const starBtn = document.getElementById('card-star-btn');
+  if (starBtn) {
+    const isStarred = LS.isStarred(q.id);
+    starBtn.classList.toggle('starred', isStarred);
+    starBtn.innerHTML = isStarred ? '⭐' : '☆';
+    starBtn.setAttribute('onclick', `event.stopPropagation(); toggleStarQuestion('${q.id}', 'card-star-btn')`);
+  }
+
+  // Update PDR Link
+  const pdrBtn = document.getElementById('card-pdr-btn');
+  if (pdrBtn) {
+    const block = getBlockForQuestion(q);
+    const pdrUrl = getPdrSectionUrl(block);
+    pdrBtn.href = pdrUrl;
+  }
+
   const pct = Math.round(((state.currentIndex + 1) / state.currentQuestions.length) * 100);
   const fill = document.getElementById('study-progress-fill');
   if (fill) fill.style.width = pct + '%';
@@ -244,11 +416,31 @@ function flipCard() {
 function markCard(known) {
   const q = state.currentQuestions[state.currentIndex];
   const block = state.currentBlock;
-  const learned = LS.getLearnedCards();
-  const key = `block_${block.id}`;
-  if (!learned[key]) learned[key] = {};
-  learned[key][q.id] = known;
-  LS.setLearnedCards(learned);
+  
+  if (block.id === 'mistakes') {
+    if (known) {
+      LS.removeMistake(q.id);
+      showToast('✅ Вилучено з помилок', 'success');
+      state.currentQuestions.splice(state.currentIndex, 1);
+      if (state.currentQuestions.length === 0) {
+        showToast('🎉 Всі помилки вирішено!', 'success');
+        setTimeout(() => { location.href = 'index.html'; }, 1500);
+        return;
+      }
+      if (state.currentIndex >= state.currentQuestions.length) {
+        state.currentIndex = state.currentQuestions.length - 1;
+      }
+      renderStudyCard();
+      renderLearnedCount();
+      return;
+    }
+  } else {
+    const learned = LS.getLearnedCards();
+    const key = `block_${block.id}`;
+    if (!learned[key]) learned[key] = {};
+    learned[key][q.id] = known;
+    LS.setLearnedCards(learned);
+  }
   renderLearnedCount();
   nextQuestion();
 }
@@ -294,6 +486,23 @@ function renderQuizQuestion() {
   setText('quiz-current', state.currentIndex + 1);
   setText('quiz-score-display', `${state.quizCorrect} правильних`);
 
+  // Update Star Button
+  const starBtn = document.getElementById('quiz-star-btn');
+  if (starBtn) {
+    const isStarred = LS.isStarred(q.id);
+    starBtn.classList.toggle('starred', isStarred);
+    starBtn.innerHTML = isStarred ? '⭐' : '☆';
+    starBtn.setAttribute('onclick', `toggleStarQuestion('${q.id}', 'quiz-star-btn')`);
+  }
+
+  // Update PDR Link
+  const pdrBtn = document.getElementById('quiz-pdr-btn');
+  if (pdrBtn) {
+    const block = getBlockForQuestion(q);
+    const pdrUrl = getPdrSectionUrl(block);
+    pdrBtn.href = pdrUrl;
+  }
+
   const nextBtn = document.getElementById('quiz-next-btn');
   if (nextBtn) nextBtn.classList.add('hidden');
 
@@ -316,6 +525,9 @@ function selectQuizAnswer(btn, isCorrect) {
   if (state.quizAnswered) return;
   state.quizAnswered = true;
 
+  const q = state.currentQuestions[state.currentIndex];
+  const block = state.currentBlock;
+
   const opts = document.getElementById('quiz-options');
   opts.querySelectorAll('.answer-option').forEach(el => {
     el.disabled = true;
@@ -326,9 +538,13 @@ function selectQuizAnswer(btn, isCorrect) {
     btn.classList.add('correct');
     state.quizCorrect++;
     showToast('✅ Правильно!', 'success');
+    if (block.id === 'mistakes') {
+      LS.removeMistake(q.id);
+    }
   } else {
     btn.classList.add('wrong');
     showToast('❌ Неправильно', 'error');
+    LS.addMistake(q.id);
   }
 
   const nextBtn = document.getElementById('quiz-next-btn');
@@ -358,11 +574,19 @@ function initTestPage() {
   const blockId = getBlockId();
   const isFull = isFullTestMode();
   state.isFullTest = isFull;
+  state.isSimulation = isSimulationMode();
 
   let block = null;
   let allQuestions = [];
 
-  if (isFull) {
+  if (state.isSimulation) {
+    allQuestions = QUESTIONS_DATA.blocks.flatMap(b => b.questions);
+    setText('test-block-title', 'Симулятор іспиту МВС');
+    setText('test-block-meta', '20 випадкових питань з усіх блоків');
+    setText('start-title', 'Симулятор іспиту МВС');
+    setText('start-description', 'Симулятор офіційного іспиту МВС: 20 випадкових питань з усіх блоків, 20 хвилин. Допускається не більше 2 помилок. Іспит завершується достроково при 3-й помилці.');
+    setText('start-count', 20);
+  } else if (isFull) {
     allQuestions = QUESTIONS_DATA.blocks.flatMap(b => b.questions);
     setText('test-block-title', 'Фінальний тест');
     setText('test-block-meta', `Питань: ${allQuestions.length}`);
@@ -387,7 +611,7 @@ function initTestPage() {
 
 function startTest() {
   const all = state.currentQuestions;
-  const count = state.isFullTest ? Math.min(40, all.length) : Math.min(20, all.length);
+  const count = state.isSimulation ? 20 : (state.isFullTest ? Math.min(40, all.length) : Math.min(20, all.length));
   state.testQuestions = shuffle(all).slice(0, count);
   state.testIndex = 0;
   state.testAnswers = [];
@@ -396,6 +620,17 @@ function startTest() {
 
   document.getElementById('start-screen').classList.add('hidden');
   document.getElementById('test-screen').classList.remove('hidden');
+
+  const simMistakesEl = document.getElementById('sim-mistakes-counter');
+  if (simMistakesEl) {
+    if (state.isSimulation) {
+      state.simMistakes = 0;
+      simMistakesEl.textContent = '❌ Помилки: 0/2';
+      simMistakesEl.classList.remove('hidden');
+    } else {
+      simMistakesEl.classList.add('hidden');
+    }
+  }
 
   setText('total-q-num', count);
   startTimer();
@@ -436,6 +671,23 @@ function renderTestQuestion() {
   setText('test-question-text', q.question);
   const testImg = document.getElementById('test-image-container');
   if (testImg) testImg.innerHTML = q.image ? `<img src="${q.image}" class="question-image" alt="Питання">` : '';
+
+  // Update Star Button
+  const starBtn = document.getElementById('test-star-btn');
+  if (starBtn) {
+    const isStarred = LS.isStarred(q.id);
+    starBtn.classList.toggle('starred', isStarred);
+    starBtn.innerHTML = isStarred ? '⭐' : '☆';
+    starBtn.setAttribute('onclick', `toggleStarQuestion('${q.id}', 'test-star-btn')`);
+  }
+
+  // Update PDR Link
+  const pdrBtn = document.getElementById('test-pdr-btn');
+  if (pdrBtn) {
+    const block = getBlockForQuestion(q);
+    const pdrUrl = getPdrSectionUrl(block);
+    pdrBtn.href = pdrUrl;
+  }
 
   const card = document.getElementById('question-card');
   if (card) {
@@ -486,7 +738,27 @@ function selectTestAnswer(btn, isCorrect) {
     correctAnswerText: q.answers.find(a => a.correct)?.text || '—',
   });
 
+  // Track mistakes in localStorage
+  if (!isCorrect) {
+    LS.addMistake(q.id);
+  }
+
+  if (state.isSimulation) {
+    if (!isCorrect) {
+      state.simMistakes++;
+      const mistakeEl = document.getElementById('sim-mistakes-counter');
+      if (mistakeEl) {
+        mistakeEl.textContent = `❌ Помилки: ${state.simMistakes}/2`;
+      }
+    }
+  }
+
   setTimeout(() => {
+    if (state.isSimulation && state.simMistakes >= 3) {
+      finishTest();
+      return;
+    }
+
     state.testIndex++;
     if (state.testIndex < state.testQuestions.length) {
       renderTestQuestion();
@@ -503,11 +775,17 @@ function finishTest() {
   const total = state.testQuestions.length;
   const correct = state.testAnswers.filter(a => a.userCorrect).length;
   const score = Math.round((correct / total) * 100);
-  const passed = score >= 90;
+  
+  let passed = false;
+  if (state.isSimulation) {
+    passed = state.simMistakes <= 2 && state.testAnswers.length === total;
+  } else {
+    passed = score >= 90;
+  }
 
   // Save result
   const results = LS.getResults();
-  const blockId = state.currentBlock?.id || 'full';
+  const blockId = state.isSimulation ? 'simulation' : (state.currentBlock?.id || 'full');
   if (!results[blockId]) results[blockId] = [];
   results[blockId].push({ score, correct, total, date: Date.now(), elapsed });
   results[blockId] = results[blockId].slice(-10); // keep last 10
@@ -523,13 +801,23 @@ function finishTest() {
     scoreEl.textContent = score + '%';
     scoreEl.className = `result-score ${passed ? 'pass' : 'fail'}`;
   }
-  setText('result-label', passed ? 'Тест складено! 🎉' : 'Потрібно більше практики');
-  setText('result-sublabel', passed
-    ? 'Ви готові до реального іспиту!'
-    : `Потрібно ${90 - score}% більше для складання іспиту`);
+  
+  if (state.isSimulation) {
+    setText('result-label', passed ? 'Іспит складено! 🎉' : 'Іспит не складено');
+    setText('result-sublabel', passed
+      ? 'Чудова підготовка! Ви успішно склали симулятор іспиту.'
+      : state.simMistakes >= 3 
+        ? 'Допущено 3 помилки. Іспит завершено достроково.' 
+        : 'Допущено більше 2 помилок.');
+  } else {
+    setText('result-label', passed ? 'Тест складено! 🎉' : 'Потрібно більше практики');
+    setText('result-sublabel', passed
+      ? 'Ви готові до реального іспиту!'
+      : `Потрібно ${90 - score}% більше для складання іспиту`);
+  }
 
   setText('res-correct', correct);
-  setText('res-wrong', total - correct);
+  setText('res-wrong', state.isSimulation ? state.simMistakes : total - correct);
   setText('res-time', formatTime(elapsed));
 
   // Mistakes
@@ -540,6 +828,7 @@ function finishTest() {
   if (mistakes.length === 0) {
     if (mistakesSection) mistakesSection.style.display = 'none';
   } else {
+    if (mistakesSection) mistakesSection.style.display = 'block';
     const list = document.getElementById('mistakes-list');
     if (list) {
       list.innerHTML = mistakes.map(m => `

@@ -56,6 +56,52 @@
         </div>
       </section>
 
+      <!-- Premium Dashboard -->
+      <section class="section premium-section">
+        <div class="section-header">
+          <h2 class="section-title"><span class="premium-badge">PRO</span> Преміум-функції (Грін Вей PRO)</h2>
+        </div>
+        <div class="premium-grid">
+          
+          <!-- MVS Simulator Card -->
+          <div class="premium-card glass-card exam-card animate-in">
+            <div class="premium-card-icon">🚦</div>
+            <h3 class="premium-card-title">Симулятор іспиту МВС</h3>
+            <p class="premium-card-desc">20 випадкових питань з усіх розділів, 20 хвилин на проходження, максимум 2 помилки. Іспит завершується достроково при 3-й помилці.</p>
+            <div class="premium-card-action">
+              <button class="btn btn-primary" onclick="startSimulation()">🚀 Запустити іспит</button>
+            </div>
+          </div>
+          
+          <!-- Mistakes Card -->
+          <div class="premium-card glass-card mistakes-card animate-in" style="animation-delay:0.1s">
+            <div class="premium-card-icon">📝</div>
+            <h3 class="premium-card-title">Робота над помилками</h3>
+            <p class="premium-card-desc">Тренуйтеся виключно на питаннях, у яких ви раніше помилилися. Вірні відповіді автоматично вилучають питання зі списку.</p>
+            <div class="premium-card-status">
+              Невирішених помилок: <strong id="mistakes-stat-count">0 питань</strong>
+            </div>
+            <div class="premium-card-action">
+              <button class="btn btn-secondary" id="btn-mistakes-practice" onclick="startMistakesPractice()" disabled>📖 Тренуватися</button>
+            </div>
+          </div>
+
+          <!-- Starred Card -->
+          <div class="premium-card glass-card starred-card animate-in" style="animation-delay:0.2s">
+            <div class="premium-card-icon">⭐</div>
+            <h3 class="premium-card-title">Вибрані питання</h3>
+            <p class="premium-card-desc">Зберігайте складні питання зірочкою під час навчання та тестування, щоб окремо повторити їх згодом.</p>
+            <div class="premium-card-status">
+              Збережено у вибране: <strong id="starred-stat-count">0 питань</strong>
+            </div>
+            <div class="premium-card-action">
+              <button class="btn btn-secondary" id="btn-starred-practice" onclick="startStarredPractice()" disabled>📖 Вивчати вибрані</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       <!-- Blocks -->
       <section class="section">
         <div class="section-header">

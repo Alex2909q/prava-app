@@ -79,6 +79,7 @@
           <div class="test-progress-text">
             Питання <strong id="current-q-num">1</strong><span> з <span id="total-q-num">20</span></span>
           </div>
+          <div class="sim-mistakes hidden" id="sim-mistakes-counter">❌ Помилки: 0/2</div>
           <div class="timer" id="timer">⏱ 20:00</div>
         </div>
 
@@ -87,6 +88,10 @@
         </div>
 
         <div class="question-card animate-in" id="question-card">
+          <div class="card-actions-row">
+            <button class="btn-star" id="test-star-btn">☆</button>
+            <a href="#" target="_blank" class="btn-pdr-link" id="test-pdr-btn">📖 Читати ПДР</a>
+          </div>
           <div class="question-text" id="test-question-text"></div>
           <div id="test-image-container" style="text-align:center; margin-top:16px;"></div>
         </div>

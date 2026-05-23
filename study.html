@@ -61,6 +61,10 @@
         <div class="flip-card-wrapper">
           <div class="flip-card" id="flip-card" onclick="flipCard()">
             <div class="flip-card-face flip-card-front">
+              <div class="card-actions-row">
+                <button class="btn-star" id="card-star-btn" onclick="event.stopPropagation();">☆</button>
+                <a href="#" target="_blank" class="btn-pdr-link" id="card-pdr-btn" onclick="event.stopPropagation();">📖 Читати ПДР</a>
+              </div>
               <div class="flip-label">Питання</div>
               <div class="flip-content" id="question-front">Завантаження...</div>
               <div id="card-image-container" style="text-align:center; margin-top:16px;"></div>
@@ -104,6 +108,10 @@
         </div>
 
         <div class="question-card animate-in">
+          <div class="card-actions-row">
+            <button class="btn-star" id="quiz-star-btn">☆</button>
+            <a href="#" target="_blank" class="btn-pdr-link" id="quiz-pdr-btn">📖 Читати ПДР</a>
+          </div>
           <div class="question-text" id="quiz-question-text">Завантаження...</div>
           <div id="quiz-image-container" style="text-align:center; margin-top:16px;"></div>
         </div>
