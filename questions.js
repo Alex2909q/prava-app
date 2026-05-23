@@ -1,3 +1,6 @@
+// questions.js — База питань ПДР України
+// Автоматично згенеровано з POLOTNO-NAKAZ_04_09_2025.pdf
+
 const QUESTIONS_DATA = {
   "version": "2025-09",
   "blocks": [
@@ -40,8 +43,7 @@ const QUESTIONS_DATA = {
               "text": "Смуга руху.",
               "correct": false
             }
-          ],
-          "image": "images/q_01_002.png"
+          ]
         },
         {
           "id": "q_01_003",
@@ -63,8 +65,7 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 2 та 3.",
               "correct": false
             }
-          ],
-          "image": "images/q_01_003.png"
+          ]
         },
         {
           "id": "q_01_004",
@@ -78,8 +79,7 @@ const QUESTIONS_DATA = {
               "text": "Нi, не належить.",
               "correct": false
             }
-          ],
-          "image": "images/q_01_004.png"
+          ]
         },
         {
           "id": "q_01_005",
@@ -188,8 +188,7 @@ const QUESTIONS_DATA = {
               "text": "Особа, яка рухається в кріслі колісному.",
               "correct": false
             }
-          ],
-          "image": "images/q_01_009.png"
+          ]
         },
         {
           "id": "q_01_010",
@@ -221,8 +220,7 @@ const QUESTIONS_DATA = {
               "text": "Пішохідний перехід, рух по якому регулюється дорожніми знаками або дорожньою розміткою.",
               "correct": false
             }
-          ],
-          "image": "images/q_01_011.png"
+          ]
         },
         {
           "id": "q_01_012",
@@ -236,8 +234,7 @@ const QUESTIONS_DATA = {
               "text": "Нерегульованим.",
               "correct": true
             }
-          ],
-          "image": "images/q_01_012.png"
+          ]
         },
         {
           "id": "q_01_013",
@@ -412,8 +409,7 @@ const QUESTIONS_DATA = {
               "text": "Варіант 1 та 2.",
               "correct": false
             }
-          ],
-          "image": "images/q_01_023.png"
+          ]
         },
         {
           "id": "q_01_024",
@@ -492,7 +488,8 @@ const QUESTIONS_DATA = {
               "text": "Відповідь 1 та 2.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_01_027.png"
         },
         {
           "id": "q_01_028",
@@ -655,7 +652,8 @@ const QUESTIONS_DATA = {
               "text": "На обох малюнках.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_01_036.png"
         },
         {
           "id": "q_01_037",
@@ -907,7 +905,8 @@ const QUESTIONS_DATA = {
               "text": "Для розділення суміжних проїзних частин та руху пішоходів за наявності на ній тротуару.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_01_050.png"
         },
         {
           "id": "q_01_051",
@@ -929,7 +928,8 @@ const QUESTIONS_DATA = {
               "text": "Газон.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_01_051.png"
         },
         {
           "id": "q_01_052",
@@ -943,7 +943,8 @@ const QUESTIONS_DATA = {
               "text": "Ні, не призначена.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_01_052.png"
         },
         {
           "id": "q_01_053",
@@ -1085,8 +1086,7 @@ const QUESTIONS_DATA = {
               "text": "Рейковий транспортний засіб.",
               "correct": false
             }
-          ],
-          "image": "images/q_01_061.png"
+          ]
         },
         {
           "id": "q_01_062",
@@ -1166,8 +1166,7 @@ const QUESTIONS_DATA = {
               "text": "Тротуар.",
               "correct": false
             }
-          ],
-          "image": "images/q_01_066.png"
+          ]
         },
         {
           "id": "q_01_067",
@@ -1199,8 +1198,7 @@ const QUESTIONS_DATA = {
               "text": "Стоянка.",
               "correct": false
             }
-          ],
-          "image": "images/q_01_068.png"
+          ]
         },
         {
           "id": "q_01_069",
@@ -1236,8 +1234,7 @@ const QUESTIONS_DATA = {
               "text": "Проїзною частиною.",
               "correct": false
             }
-          ],
-          "image": "images/q_01_070.png"
+          ]
         },
         {
           "id": "q_01_071",
@@ -1273,8 +1270,7 @@ const QUESTIONS_DATA = {
               "text": "Ближнє світло фар.",
               "correct": false
             }
-          ],
-          "image": "images/q_01_072.png"
+          ]
         },
         {
           "id": "q_01_073",
@@ -1336,8 +1332,7 @@ const QUESTIONS_DATA = {
               "text": "Дорожня обстановка.",
               "correct": true
             }
-          ],
-          "image": "images/q_01_075.png"
+          ]
         },
         {
           "id": "q_01_076",
@@ -1434,8 +1429,7 @@ const QUESTIONS_DATA = {
               "text": "Вжити всіх можливих заходів для збереження слідів пригоди, огородження їх, організувати об’їзд місця пригоди.",
               "correct": false
             }
-          ],
-          "image": "images/q_02_080.png"
+          ]
         },
         {
           "id": "q_02_081",
@@ -1475,8 +1469,7 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 2.",
               "correct": false
             }
-          ],
-          "image": "images/q_02_082.png"
+          ]
         },
         {
           "id": "q_02_083",
@@ -2007,8 +2000,7 @@ const QUESTIONS_DATA = {
               "text": "Усе перелічене вище.",
               "correct": false
             }
-          ],
-          "image": "images/q_02_107.png"
+          ]
         },
         {
           "id": "q_02_108",
@@ -2147,7 +2139,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_02_114.png"
         },
         {
           "id": "q_02_115",
@@ -2165,7 +2158,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_02_115.png"
         }
       ]
     },
@@ -2257,7 +2251,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено в будь-якому разі.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_03_120.png"
         },
         {
           "id": "q_03_121",
@@ -2335,8 +2330,7 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2 і 3.",
               "correct": false
             }
-          ],
-          "image": "images/q_03_124.png"
+          ]
         },
         {
           "id": "q_03_125",
@@ -2350,8 +2344,7 @@ const QUESTIONS_DATA = {
               "text": "Не зобов’язаний.",
               "correct": false
             }
-          ],
-          "image": "images/q_03_125.png"
+          ]
         },
         {
           "id": "q_03_126",
@@ -2365,8 +2358,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_03_126.png"
+          ]
         },
         {
           "id": "q_03_127",
@@ -2434,7 +2426,8 @@ const QUESTIONS_DATA = {
               "text": "Повинен тільки у разі ввімкнення проблискових маячків та (або) спеціального звукового сигналу.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_03_130.png"
         },
         {
           "id": "q_03_131",
@@ -2473,7 +2466,8 @@ const QUESTIONS_DATA = {
               "text": "Лише з боку дверей, коли трамвай перебуває в зоні видимості.».",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_04_132.png"
         },
         {
           "id": "q_04_133",
@@ -2491,7 +2485,8 @@ const QUESTIONS_DATA = {
               "text": "Тільки по них.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_04_133.png"
         },
         {
           "id": "q_04_134",
@@ -2509,7 +2504,8 @@ const QUESTIONS_DATA = {
               "text": "Будь-якого боку, як кому зручніше.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_04_134.png"
         },
         {
           "id": "q_04_135",
@@ -2669,8 +2665,7 @@ const QUESTIONS_DATA = {
               "text": "Повинні очікувати на розділювальній смузі і можуть продовжити перехід лише тоді, коли це буде дозволено відповідним сигналом світлофора.",
               "correct": true
             }
-          ],
-          "image": "images/q_04_142.png"
+          ]
         },
         {
           "id": "q_04_143",
@@ -2706,8 +2701,7 @@ const QUESTIONS_DATA = {
               "text": "Якщо в зоні видимості немає переходу або перехрестя, а дорога має розділювальну смугу, при цьому пішохід повинен переконатися у відсутності небезпеки.",
               "correct": false
             }
-          ],
-          "image": "images/q_04_144.png"
+          ]
         },
         {
           "id": "q_04_145",
@@ -2819,8 +2813,7 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 2.",
               "correct": false
             }
-          ],
-          "image": "images/q_04_150.png"
+          ]
         },
         {
           "id": "q_04_151",
@@ -2838,8 +2831,7 @@ const QUESTIONS_DATA = {
               "text": "Повинні пересуватися в напрямку руху транспортних засобів.",
               "correct": true
             }
-          ],
-          "image": "images/q_04_151.png"
+          ]
         },
         {
           "id": "q_04_152",
@@ -2879,8 +2871,7 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": false
             }
-          ],
-          "image": "images/q_04_153.png"
+          ]
         },
         {
           "id": "q_04_154",
@@ -2894,7 +2885,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_04_154.png"
         },
         {
           "id": "q_04_155",
@@ -2908,7 +2900,8 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_04_155.png"
         },
         {
           "id": "q_04_156",
@@ -3064,8 +3057,7 @@ const QUESTIONS_DATA = {
               "text": "Не повинні.",
               "correct": false
             }
-          ],
-          "image": "images/q_05_164.png"
+          ]
         },
         {
           "id": "q_05_165",
@@ -3219,8 +3211,7 @@ const QUESTIONS_DATA = {
               "text": "Ні, посадку (висадку) дозволяється здійснювати пасажирам з крайньої смуги проїзної частини (але не з боку суміжної смуги для руху), за умови, що це буде безпечно та не створить перешкод іншим учасникам руху.",
               "correct": true
             }
-          ],
-          "image": "images/q_05_173.png"
+          ]
         }
       ]
     },
@@ -3244,7 +3235,8 @@ const QUESTIONS_DATA = {
               "text": "Має перевагу, якщо автомобіль наближається зліва.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_06_174.png"
         },
         {
           "id": "q_06_175",
@@ -3522,7 +3514,8 @@ const QUESTIONS_DATA = {
               "text": "Велосипедну смугу.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_06_190.png"
         },
         {
           "id": "q_06_191",
@@ -3792,8 +3785,7 @@ const QUESTIONS_DATA = {
               "text": "Повернули на зображений на малюнку сигнал регулювальника, не даючи дороги пішоходам.",
               "correct": false
             }
-          ],
-          "image": "images/q_07_205.png"
+          ]
         },
         {
           "id": "q_07_206",
@@ -3826,7 +3818,8 @@ const QUESTIONS_DATA = {
               "text": "Обом транспортним засобам.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_07_207.png"
         },
         {
           "id": "q_07_208",
@@ -3844,7 +3837,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено тільки Вам.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_07_208.png"
         },
         {
           "id": "q_07_209",
@@ -3858,8 +3852,7 @@ const QUESTIONS_DATA = {
               "text": "Не повинен.",
               "correct": false
             }
-          ],
-          "image": "images/q_07_209.png"
+          ]
         },
         {
           "id": "q_07_210",
@@ -3918,7 +3911,8 @@ const QUESTIONS_DATA = {
               "text": "Праворуч.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_07_212.png"
         },
         {
           "id": "q_07_213",
@@ -4042,7 +4036,8 @@ const QUESTIONS_DATA = {
               "text": "На першому і другому.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_07_218.png"
         },
         {
           "id": "q_07_219",
@@ -4110,7 +4105,8 @@ const QUESTIONS_DATA = {
               "text": "Синьому і білому.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_07_221.png"
         },
         {
           "id": "q_07_222",
@@ -4456,7 +4452,8 @@ const QUESTIONS_DATA = {
               "text": "Прямо, праворуч, ліворуч або у зворотному напрямку.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_07_237.png"
         },
         {
           "id": "q_07_238",
@@ -4501,7 +4498,8 @@ const QUESTIONS_DATA = {
               "text": "Сірому і червоному.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_07_239.png"
         },
         {
           "id": "q_07_240",
@@ -4705,8 +4703,7 @@ const QUESTIONS_DATA = {
               "text": "Сигналами регулювальника.",
               "correct": true
             }
-          ],
-          "image": "images/q_07_250.png"
+          ]
         },
         {
           "id": "q_07_251",
@@ -4724,7 +4721,8 @@ const QUESTIONS_DATA = {
               "text": "Рух заборонено транспортним засобам і пішоходам.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_07_251.png"
         },
         {
           "id": "q_07_252",
@@ -4786,7 +4784,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено за умови безперешкодного пропуску транспортних засобів, що рухаються з інших напрямків, а також пішоходів.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_07_255.png"
         },
         {
           "id": "q_07_256",
@@ -4865,7 +4864,8 @@ const QUESTIONS_DATA = {
               "text": "Прямо, ліворуч або розворот.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_07_258.png"
         },
         {
           "id": "q_07_259",
@@ -4923,7 +4923,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_07_262.png"
         },
         {
           "id": "q_07_263",
@@ -4956,7 +4957,8 @@ const QUESTIONS_DATA = {
               "text": "Зупинитися перед стоп-лінією і повернути, коли ввімкнеться додаткова секція.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_07_264.png"
         },
         {
           "id": "q_07_265",
@@ -4978,8 +4980,7 @@ const QUESTIONS_DATA = {
               "text": "Світлофор 4.",
               "correct": false
             }
-          ],
-          "image": "images/q_07_265.png"
+          ]
         },
         {
           "id": "q_07_266",
@@ -5007,7 +5008,8 @@ const QUESTIONS_DATA = {
               "text": "У разі ввімкнення зеленого сигналу світлофора, а також при ввімкненому червоному сигналі, але за умови надання переваги в русі іншим учасникам.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_07_267.png"
         },
         {
           "id": "q_07_268",
@@ -5025,7 +5027,8 @@ const QUESTIONS_DATA = {
               "text": "Ліворуч.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_07_268.png"
         },
         {
           "id": "q_07_269",
@@ -5155,8 +5158,7 @@ const QUESTIONS_DATA = {
               "text": "Горизонтальна і вертикальна.",
               "correct": true
             }
-          ],
-          "image": "images/q_07_274.png"
+          ]
         },
         {
           "id": "q_07_275",
@@ -5484,8 +5486,7 @@ const QUESTIONS_DATA = {
               "text": "Вимогами дорожньої розмітки.",
               "correct": false
             }
-          ],
-          "image": "images/q_07_291.png"
+          ]
         },
         {
           "id": "q_07_292",
@@ -5569,7 +5570,8 @@ const QUESTIONS_DATA = {
               "text": "Ближнє світло фар або денні ходові вогні.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_08_294.png"
         },
         {
           "id": "q_08_295",
@@ -5655,8 +5657,7 @@ const QUESTIONS_DATA = {
               "text": "На відстані, що забезпечує безпеку дорожнього руху, але не менше ніж 100 м.",
               "correct": false
             }
-          ],
-          "image": "images/q_08_298.png"
+          ]
         },
         {
           "id": "q_08_299",
@@ -5682,7 +5683,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2 і 3.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_08_299.png"
         },
         {
           "id": "q_08_300",
@@ -5700,7 +5702,8 @@ const QUESTIONS_DATA = {
               "text": "Ввімкнути аварійну сигналізацію, а також установити знак аварійної зупинки чи миготливий червоний ліхтар.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_08_300.png"
         },
         {
           "id": "q_08_301",
@@ -5718,8 +5721,7 @@ const QUESTIONS_DATA = {
               "text": "На третьому.",
               "correct": false
             }
-          ],
-          "image": "images/q_08_301.png"
+          ]
         },
         {
           "id": "q_08_302",
@@ -5890,8 +5892,7 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 3.",
               "correct": true
             }
-          ],
-          "image": "images/q_08_309.png"
+          ]
         },
         {
           "id": "q_08_310",
@@ -5909,8 +5910,7 @@ const QUESTIONS_DATA = {
               "text": "Стоянкові вогні.",
               "correct": false
             }
-          ],
-          "image": "images/q_08_310.png"
+          ]
         },
         {
           "id": "q_08_311",
@@ -5960,8 +5960,7 @@ const QUESTIONS_DATA = {
               "text": "Не вмикати покажчики поворотів, поки він рухається по одній смузі.",
               "correct": true
             }
-          ],
-          "image": "images/q_08_313.png"
+          ]
         },
         {
           "id": "q_08_314",
@@ -6059,8 +6058,7 @@ const QUESTIONS_DATA = {
               "text": "Варіанти 1 та 2 вірні.",
               "correct": false
             }
-          ],
-          "image": "images/q_08_318.png"
+          ]
         },
         {
           "id": "q_08_319",
@@ -6078,8 +6076,7 @@ const QUESTIONS_DATA = {
               "text": "Витягнете ліву руку і зігнете у лікті під прямим кутом вгору.",
               "correct": false
             }
-          ],
-          "image": "images/q_08_319.png"
+          ]
         },
         {
           "id": "q_08_320",
@@ -6315,8 +6312,7 @@ const QUESTIONS_DATA = {
               "text": "Не повинен поступатися дорогою у разі, якщо він уже почав перестроювання.",
               "correct": false
             }
-          ],
-          "image": "images/q_08_331.png"
+          ]
         },
         {
           "id": "q_08_332",
@@ -6438,8 +6434,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено, якщо встановлений знак «Подачу звукового сигналу заборонено».",
               "correct": true
             }
-          ],
-          "image": "images/q_08_338.png"
+          ]
         },
         {
           "id": "q_08_339",
@@ -6457,8 +6452,7 @@ const QUESTIONS_DATA = {
               "text": "Дозволено в будь-якому випадку.",
               "correct": false
             }
-          ],
-          "image": "images/q_08_339.png"
+          ]
         },
         {
           "id": "q_08_340",
@@ -6730,7 +6724,8 @@ const QUESTIONS_DATA = {
               "text": "Стоянкові вогні.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_08_353.png"
         }
       ]
     },
@@ -6762,8 +6757,7 @@ const QUESTIONS_DATA = {
               "text": "По траєкторіях А, Б і В.",
               "correct": false
             }
-          ],
-          "image": "images/q_09_354.png"
+          ]
         },
         {
           "id": "q_09_355",
@@ -6822,8 +6816,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_09_358.png"
+          ]
         },
         {
           "id": "q_09_359",
@@ -6837,7 +6830,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено за умови забезпечення безпеки руху.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_09_359.png"
         },
         {
           "id": "q_09_360",
@@ -6923,7 +6917,8 @@ const QUESTIONS_DATA = {
               "text": "Дасте дорогу водію білого автомобіля і переконавшись, що це буде безпечно і не створить перешкод або небезпеки іншим учасникам руху, виконаєте маневр.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_09_364.png"
         },
         {
           "id": "q_09_365",
@@ -6941,8 +6936,7 @@ const QUESTIONS_DATA = {
               "text": "Дасте дорогу водію сірого автомобіля і переконавшись, що це буде безпечно і не створить перешкод або небезпеки іншим учасникам руху, виконаєте маневр.",
               "correct": true
             }
-          ],
-          "image": "images/q_09_365.png"
+          ]
         },
         {
           "id": "q_09_366",
@@ -7069,7 +7063,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_09_372.png"
         },
         {
           "id": "q_09_373",
@@ -7098,7 +7093,8 @@ const QUESTIONS_DATA = {
               "text": "Неправильно.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_09_374.png"
         },
         {
           "id": "q_09_375",
@@ -7112,8 +7108,7 @@ const QUESTIONS_DATA = {
               "text": "Неправильно.",
               "correct": false
             }
-          ],
-          "image": "images/q_09_375.png"
+          ]
         },
         {
           "id": "q_09_376",
@@ -7131,7 +7126,8 @@ const QUESTIONS_DATA = {
               "text": "Водії обох автомобілів.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_09_376.png"
         },
         {
           "id": "q_09_377",
@@ -7160,7 +7156,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_09_378.png"
         },
         {
           "id": "q_09_379",
@@ -7182,7 +7179,8 @@ const QUESTIONS_DATA = {
               "text": "У місці В.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_09_379.png"
         },
         {
           "id": "q_09_380",
@@ -7582,8 +7580,7 @@ const QUESTIONS_DATA = {
               "text": "Дозволяється рух заднім ходом на дорогах з одностороннім рухом за умови забезпечення безпеки руху та неможливості під'їхати до об'єкта іншим способом.",
               "correct": true
             }
-          ],
-          "image": "images/q_09_399.png"
+          ]
         },
         {
           "id": "q_09_400",
@@ -7917,7 +7914,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_09_416.png"
         },
         {
           "id": "q_09_417",
@@ -7946,7 +7944,8 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_09_418.png"
         },
         {
           "id": "q_09_419",
@@ -8004,7 +8003,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_09_422.png"
         },
         {
           "id": "q_09_423",
@@ -8037,8 +8037,7 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": false
             }
-          ],
-          "image": "images/q_09_424.png"
+          ]
         },
         {
           "id": "q_09_425",
@@ -8052,7 +8051,8 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_09_425.png"
         },
         {
           "id": "q_09_426",
@@ -8113,7 +8113,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонений.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_09_429.png"
         }
       ]
     },
@@ -8185,7 +8186,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_10_433.png"
         },
         {
           "id": "q_10_434",
@@ -8199,7 +8201,8 @@ const QUESTIONS_DATA = {
               "text": "Не має права.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_10_434.png"
         },
         {
           "id": "q_10_435",
@@ -8213,8 +8216,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_10_435.png"
+          ]
         },
         {
           "id": "q_10_436",
@@ -8228,7 +8230,8 @@ const QUESTIONS_DATA = {
               "text": "Неправильно: наїжджати на переривчасті лінії розмітки дозволяється лише під час перестроювання.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_10_436.png"
         },
         {
           "id": "q_10_437",
@@ -8395,7 +8398,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_10_444.png"
         },
         {
           "id": "q_10_445",
@@ -8413,7 +8417,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 2.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_10_445.png"
         },
         {
           "id": "q_10_446",
@@ -8431,8 +8436,7 @@ const QUESTIONS_DATA = {
               "text": "Дозволено, якщо інші смуги зайняті.",
               "correct": false
             }
-          ],
-          "image": "images/q_10_446.png"
+          ]
         },
         {
           "id": "q_10_447",
@@ -8498,8 +8502,7 @@ const QUESTIONS_DATA = {
               "text": "Повинні рухатися якнайближче до правого краю проїзної частини, крім випадків, коли виконуються випередження, об'їзд або перестроювання перед поворотом ліворуч чи розворотом.",
               "correct": true
             }
-          ],
-          "image": "images/q_10_449.png"
+          ]
         },
         {
           "id": "q_10_450",
@@ -8713,8 +8716,7 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 2.",
               "correct": true
             }
-          ],
-          "image": "images/q_10_460.png"
+          ]
         },
         {
           "id": "q_10_461",
@@ -8888,7 +8890,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 2.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_11_468.png"
         },
         {
           "id": "q_11_469",
@@ -8937,8 +8940,7 @@ const QUESTIONS_DATA = {
               "text": "130 км/год.",
               "correct": true
             }
-          ],
-          "image": "images/q_11_470.png"
+          ]
         },
         {
           "id": "q_11_471",
@@ -8960,7 +8962,8 @@ const QUESTIONS_DATA = {
               "text": "130 км/год.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_11_471.png"
         },
         {
           "id": "q_11_472",
@@ -9054,7 +9057,8 @@ const QUESTIONS_DATA = {
               "text": "110 км/год.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_11_475.png"
         },
         {
           "id": "q_11_476",
@@ -9076,7 +9080,8 @@ const QUESTIONS_DATA = {
               "text": "70 км/год.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_11_476.png"
         },
         {
           "id": "q_11_477",
@@ -9098,7 +9103,8 @@ const QUESTIONS_DATA = {
               "text": "70 км/год.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_11_477.png"
         },
         {
           "id": "q_11_478",
@@ -9124,7 +9130,8 @@ const QUESTIONS_DATA = {
               "text": "50 км/год.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_11_478.png"
         },
         {
           "id": "q_11_479",
@@ -9150,7 +9157,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2 і 3.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_11_479.png"
         },
         {
           "id": "q_11_480",
@@ -9191,7 +9199,8 @@ const QUESTIONS_DATA = {
               "text": "50 км/год.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_11_481.png"
         },
         {
           "id": "q_11_482",
@@ -9251,7 +9260,8 @@ const QUESTIONS_DATA = {
               "text": "80 км/год.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_11_484.png"
         },
         {
           "id": "q_11_485",
@@ -9273,7 +9283,8 @@ const QUESTIONS_DATA = {
               "text": "80 км/год.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_11_485.png"
         },
         {
           "id": "q_11_486",
@@ -9299,7 +9310,8 @@ const QUESTIONS_DATA = {
               "text": "50 км/год.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_11_486.png"
         },
         {
           "id": "q_11_487",
@@ -9321,7 +9333,8 @@ const QUESTIONS_DATA = {
               "text": "50 км/год.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_11_487.png"
         },
         {
           "id": "q_11_488",
@@ -9335,8 +9348,7 @@ const QUESTIONS_DATA = {
               "text": "Повинен завжди.",
               "correct": true
             }
-          ],
-          "image": "images/q_11_488.png"
+          ]
         },
         {
           "id": "q_11_489",
@@ -9741,7 +9753,8 @@ const QUESTIONS_DATA = {
               "text": "Синього автомобіля.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_12_510.png"
         },
         {
           "id": "q_12_511",
@@ -9789,7 +9802,8 @@ const QUESTIONS_DATA = {
               "text": "Водій, на смузі якого немає перешкод.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_12_513.png"
         },
         {
           "id": "q_12_514",
@@ -9807,7 +9821,8 @@ const QUESTIONS_DATA = {
               "text": "Дистанція повинна бути такою, щоб транспортні засоби, які виконують обгін, мали змогу безперешкодно повернутися на раніше займану смугу руху.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_12_514.png"
         },
         {
           "id": "q_12_515",
@@ -10162,7 +10177,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено за умови виконання вимог з відповідей 1 і 2.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_13_531.png"
         },
         {
           "id": "q_13_532",
@@ -10180,7 +10196,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено тільки в населеному пункті.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_13_532.png"
         },
         {
           "id": "q_13_533",
@@ -10209,7 +10226,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_13_534.png"
         },
         {
           "id": "q_13_535",
@@ -10231,7 +10249,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено при дотриманні умов, зазначених у відповідях 2 і 3.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_13_535.png"
         },
         {
           "id": "q_13_536",
@@ -10249,7 +10268,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено, якщо швидкість автомобіля, що обганяється, менше 30 км/год.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_13_536.png"
         },
         {
           "id": "q_13_537",
@@ -10267,7 +10287,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено, якщо швидкість автомобіля, що обганяється, менше 30 км/год.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_13_537.png"
         },
         {
           "id": "q_13_538",
@@ -10281,7 +10302,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_13_538.png"
         },
         {
           "id": "q_13_539",
@@ -10295,7 +10317,8 @@ const QUESTIONS_DATA = {
               "text": "Правильно, оскільки обгін був завершений за 100 м до залізничного переїзду.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_13_539.png"
         },
         {
           "id": "q_13_540",
@@ -10313,7 +10336,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено за умови, що синій автомобіль рухається повільно.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_13_540.png"
         },
         {
           "id": "q_13_541",
@@ -10361,7 +10385,8 @@ const QUESTIONS_DATA = {
               "text": "Має право.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_13_543.png"
         },
         {
           "id": "q_13_544",
@@ -10375,7 +10400,8 @@ const QUESTIONS_DATA = {
               "text": "Не може – повинен дочекатися, поки сірий автомобіль завершить обгін.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_13_544.png"
         },
         {
           "id": "q_13_545",
@@ -10465,7 +10491,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено, при цьому він повинен переконатися в безпеці маневру.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_13_549.png"
         },
         {
           "id": "q_13_550",
@@ -10498,7 +10525,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_13_551.png"
         },
         {
           "id": "q_13_552",
@@ -10809,7 +10837,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_13_568.png"
         },
         {
           "id": "q_13_569",
@@ -10867,7 +10896,8 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_13_572.png"
         },
         {
           "id": "q_13_573",
@@ -10881,7 +10911,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_13_573.png"
         },
         {
           "id": "q_13_574",
@@ -10954,7 +10985,8 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_13_577.png"
         }
       ]
     },
@@ -10982,7 +11014,8 @@ const QUESTIONS_DATA = {
               "text": "У місцях А і В.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_578.png"
         },
         {
           "id": "q_14_579",
@@ -11100,7 +11133,8 @@ const QUESTIONS_DATA = {
               "text": "Ніхто не порушує.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_583.png"
         },
         {
           "id": "q_14_584",
@@ -11126,7 +11160,8 @@ const QUESTIONS_DATA = {
               "text": "Усі транспортні засоби порушують.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_584.png"
         },
         {
           "id": "q_14_585",
@@ -11148,7 +11183,8 @@ const QUESTIONS_DATA = {
               "text": "Ніхто не порушує.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_585.png"
         },
         {
           "id": "q_14_586",
@@ -11166,7 +11202,8 @@ const QUESTIONS_DATA = {
               "text": "У місцях А і Б.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_586.png"
         },
         {
           "id": "q_14_587",
@@ -11184,7 +11221,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_587.png"
         },
         {
           "id": "q_14_588",
@@ -11202,7 +11240,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено тільки в світлий час доби.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_588.png"
         },
         {
           "id": "q_14_589",
@@ -11285,7 +11324,8 @@ const QUESTIONS_DATA = {
               "text": "У всіх місцях.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_592.png"
         },
         {
           "id": "q_14_593",
@@ -11303,7 +11343,8 @@ const QUESTIONS_DATA = {
               "text": "Зупинка в цьому місці дозволена в будь-якому випадку",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_593.png"
         },
         {
           "id": "q_14_594",
@@ -11317,7 +11358,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_594.png"
         },
         {
           "id": "q_14_595",
@@ -11343,7 +11385,8 @@ const QUESTIONS_DATA = {
               "text": "4 м.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_595.png"
         },
         {
           "id": "q_14_596",
@@ -11365,7 +11408,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2 і 3.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_596.png"
         },
         {
           "id": "q_14_597",
@@ -11379,7 +11423,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонена.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_597.png"
         },
         {
           "id": "q_14_598",
@@ -11397,7 +11442,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонена, якщо транспортний засіб унеможливить рух інших транспортних засобів або створить перешкоду для руху пішоходів.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_598.png"
         },
         {
           "id": "q_14_599",
@@ -11438,7 +11484,8 @@ const QUESTIONS_DATA = {
               "text": "У місцях А, В і Г.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_600.png"
         },
         {
           "id": "q_14_601",
@@ -11464,7 +11511,8 @@ const QUESTIONS_DATA = {
               "text": "Водії фіолетового і білого автомобілів.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_601.png"
         },
         {
           "id": "q_14_602",
@@ -11532,7 +11580,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено, якщо буде можливий зустрічний роз'їзд або об'їзд транспортних засобів, що зупинилися.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_604.png"
         },
         {
           "id": "q_14_605",
@@ -11565,7 +11614,8 @@ const QUESTIONS_DATA = {
               "text": "Ближче 30 м.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_606.png"
         },
         {
           "id": "q_14_607",
@@ -11597,7 +11647,8 @@ const QUESTIONS_DATA = {
               "text": "Водій червоного автомобіля.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_608.png"
         },
         {
           "id": "q_14_609",
@@ -11626,7 +11677,8 @@ const QUESTIONS_DATA = {
               "text": "Забороняється.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_610.png"
         },
         {
           "id": "q_14_611",
@@ -11659,7 +11711,8 @@ const QUESTIONS_DATA = {
               "text": "Неправильно.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_612.png"
         },
         {
           "id": "q_14_613",
@@ -11685,7 +11738,8 @@ const QUESTIONS_DATA = {
               "text": "У місці В.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_613.png"
         },
         {
           "id": "q_14_614",
@@ -11703,7 +11757,8 @@ const QUESTIONS_DATA = {
               "text": "Обидва водії.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_614.png"
         },
         {
           "id": "q_14_615",
@@ -11721,7 +11776,8 @@ const QUESTIONS_DATA = {
               "text": "На обох.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_615.png"
         },
         {
           "id": "q_14_616",
@@ -11762,7 +11818,8 @@ const QUESTIONS_DATA = {
               "text": "Обом водіям.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_617.png"
         },
         {
           "id": "q_14_618",
@@ -11780,7 +11837,8 @@ const QUESTIONS_DATA = {
               "text": "У місці А чи Б.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_618.png"
         },
         {
           "id": "q_14_619",
@@ -11798,7 +11856,8 @@ const QUESTIONS_DATA = {
               "text": "Біля правого або лівого краю проїзної частини.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_619.png"
         },
         {
           "id": "q_14_620",
@@ -11862,7 +11921,8 @@ const QUESTIONS_DATA = {
               "text": "Коричневий мотоцикл із боковим причепом.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_622.png"
         },
         {
           "id": "q_14_623",
@@ -11907,7 +11967,8 @@ const QUESTIONS_DATA = {
               "text": "У місці А і В.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_624.png"
         },
         {
           "id": "q_14_625",
@@ -11921,7 +11982,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_625.png"
         },
         {
           "id": "q_14_626",
@@ -12031,7 +12093,8 @@ const QUESTIONS_DATA = {
               "text": "Правильно.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_630.png"
         },
         {
           "id": "q_14_631",
@@ -12049,7 +12112,8 @@ const QUESTIONS_DATA = {
               "text": "Обидва автомобілі.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_631.png"
         },
         {
           "id": "q_14_632",
@@ -12093,8 +12157,7 @@ const QUESTIONS_DATA = {
               "text": "150 м.",
               "correct": false
             }
-          ],
-          "image": "images/q_14_633.png"
+          ]
         },
         {
           "id": "q_14_634",
@@ -12810,7 +12873,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонена.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_667.png"
         },
         {
           "id": "q_14_668",
@@ -12919,7 +12983,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонено. 16.1. ПРОЇЗД ПЕРЕХРЕСТЬ (РЕГУЛЬОВАНІ ПЕРЕХРЕСТЯ)",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_674.png"
         },
         {
           "id": "q_14_675",
@@ -12960,7 +13025,8 @@ const QUESTIONS_DATA = {
               "text": "Дати дорогу тільки попутному трамваю.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_676.png"
         },
         {
           "id": "q_14_677",
@@ -12974,7 +13040,8 @@ const QUESTIONS_DATA = {
               "text": "Автомобіль.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_677.png"
         },
         {
           "id": "q_14_678",
@@ -12988,7 +13055,8 @@ const QUESTIONS_DATA = {
               "text": "Закінчити поворот ліворуч незалежно від сигналу світлофора на шляху свого руху.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_678.png"
         },
         {
           "id": "q_14_679",
@@ -13002,7 +13070,8 @@ const QUESTIONS_DATA = {
               "text": "Повинен зупинитися перед дорожньою розміткою «Стоп-лінія» і продовжити рух, коли ввімкнеться зелений сигнал світлофора.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_679.png"
         },
         {
           "id": "q_14_680",
@@ -13016,7 +13085,8 @@ const QUESTIONS_DATA = {
               "text": "Зупинитися перед дорожньою розміткою «Стоп-лінія» і продовжити рух, коли ввімкнеться зелений сигнал світлофора.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_680.png"
         },
         {
           "id": "q_14_681",
@@ -13030,7 +13100,8 @@ const QUESTIONS_DATA = {
               "text": "Водій трамвая.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_681.png"
         },
         {
           "id": "q_14_682",
@@ -13059,7 +13130,8 @@ const QUESTIONS_DATA = {
               "text": "Проїде першим, маючи перевагу.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_683.png"
         },
         {
           "id": "q_14_684",
@@ -13077,7 +13149,8 @@ const QUESTIONS_DATA = {
               "text": "Повернути праворуч, давши дорогу лише транспортним засобам, що рухаються з інших напрямків.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_684.png"
         },
         {
           "id": "q_14_685",
@@ -13162,7 +13235,8 @@ const QUESTIONS_DATA = {
               "text": "Фіолетовий, білий.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_689.png"
         },
         {
           "id": "q_14_690",
@@ -13180,7 +13254,8 @@ const QUESTIONS_DATA = {
               "text": "Дати дорогу сірому і зеленому автомобілям.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_690.png"
         },
         {
           "id": "q_14_691",
@@ -13198,7 +13273,8 @@ const QUESTIONS_DATA = {
               "text": "Проїхати перехрестя без зупинки.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_691.png"
         },
         {
           "id": "q_14_692",
@@ -13216,7 +13292,8 @@ const QUESTIONS_DATA = {
               "text": "Не повинен, оскільки рухається на сигнал світлофора, що дозволяє рух.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_692.png"
         },
         {
           "id": "q_14_693",
@@ -13257,7 +13334,8 @@ const QUESTIONS_DATA = {
               "text": "Повинен дати дорогу, тільки повертаючи ліворуч.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_694.png"
         },
         {
           "id": "q_14_695",
@@ -13290,7 +13368,8 @@ const QUESTIONS_DATA = {
               "text": "Дати дорогу фіолетовому автомобілю і пішоходу, що завершують рух через перехрестя.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_696.png"
         },
         {
           "id": "q_14_697",
@@ -13308,7 +13387,8 @@ const QUESTIONS_DATA = {
               "text": "Дати дорогу пішоходу, щоб він мав можливість закінчити перехід.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_697.png"
         },
         {
           "id": "q_14_698",
@@ -13322,7 +13402,8 @@ const QUESTIONS_DATA = {
               "text": "Дати дорогу зеленому автомобілю, що завершує рух через перехрестя.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_698.png"
         },
         {
           "id": "q_14_699",
@@ -13351,7 +13432,8 @@ const QUESTIONS_DATA = {
               "text": "Дати дорогу зустрічному автомобілю.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_700.png"
         },
         {
           "id": "q_14_701",
@@ -13365,8 +13447,7 @@ const QUESTIONS_DATA = {
               "text": "Проїхати перехрестя першим.",
               "correct": true
             }
-          ],
-          "image": "images/q_14_701.png"
+          ]
         },
         {
           "id": "q_14_702",
@@ -13496,7 +13577,8 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_708.png"
         },
         {
           "id": "q_14_709",
@@ -13539,7 +13621,8 @@ const QUESTIONS_DATA = {
               "text": "Давши дорогу синьому автомобілю.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_712.png"
         },
         {
           "id": "q_14_713",
@@ -13567,7 +13650,8 @@ const QUESTIONS_DATA = {
               "text": "Білий автомобіль, а потім Ви.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_714.png"
         },
         {
           "id": "q_14_715",
@@ -13693,7 +13777,8 @@ const QUESTIONS_DATA = {
               "text": "Першим.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_723.png"
         },
         {
           "id": "q_14_724",
@@ -13890,7 +13975,8 @@ const QUESTIONS_DATA = {
               "text": "Проїхати, давши дорогу велосипедистові.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_735.png"
         },
         {
           "id": "q_14_736",
@@ -13904,7 +13990,8 @@ const QUESTIONS_DATA = {
               "text": "Надати перевагу у русі фіолетову автомобілю, який вже рухається по колу і після цього виїхати на перехрестя.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_736.png"
         },
         {
           "id": "q_14_737",
@@ -13969,7 +14056,8 @@ const QUESTIONS_DATA = {
               "text": "Проїхати перехрестя останнім – після трамвая і білого автомобіля.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_740.png"
         },
         {
           "id": "q_14_741",
@@ -14005,7 +14093,8 @@ const QUESTIONS_DATA = {
               "text": "Третім.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_742.png"
         },
         {
           "id": "q_14_743",
@@ -14074,7 +14163,8 @@ const QUESTIONS_DATA = {
               "text": "Вважати, що він перебуває на другорядній дорозі.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_746.png"
         },
         {
           "id": "q_14_747",
@@ -14120,7 +14210,8 @@ const QUESTIONS_DATA = {
               "text": "Повинен дати Вам дорогу.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_749.png"
         },
         {
           "id": "q_14_750",
@@ -14414,7 +14505,8 @@ const QUESTIONS_DATA = {
               "text": "Третім.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_765.png"
         },
         {
           "id": "q_14_766",
@@ -14428,7 +14520,8 @@ const QUESTIONS_DATA = {
               "text": "Дати дорогу всім транспортним засобам, що рухаються по дорозі, на яку він в'їжджає.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_766.png"
         },
         {
           "id": "q_14_767",
@@ -14442,7 +14535,8 @@ const QUESTIONS_DATA = {
               "text": "Дати дорогу трактору і проїхати другим.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_767.png"
         },
         {
           "id": "q_14_768",
@@ -14456,7 +14550,8 @@ const QUESTIONS_DATA = {
               "text": "Проїхати другим, давши дорогу трамваю.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_768.png"
         },
         {
           "id": "q_14_769",
@@ -14519,7 +14614,8 @@ const QUESTIONS_DATA = {
               "text": "Трамвай 2, червоний автомобіль, трамвай 1, фіолетовий, зелений автомобілі.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_771.png"
         },
         {
           "id": "q_14_772",
@@ -14573,7 +14669,8 @@ const QUESTIONS_DATA = {
               "text": "Третім.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_774.png"
         },
         {
           "id": "q_14_775",
@@ -14716,7 +14813,8 @@ const QUESTIONS_DATA = {
               "text": "Може, тому що рухається прямо.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_782.png"
         },
         {
           "id": "q_14_783",
@@ -14748,7 +14846,8 @@ const QUESTIONS_DATA = {
               "text": "Залежить від швидкості транспортних засобів.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_784.png"
         },
         {
           "id": "q_14_785",
@@ -14922,7 +15021,8 @@ const QUESTIONS_DATA = {
               "text": "Проїхати перехрестя першим.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_794.png"
         },
         {
           "id": "q_14_795",
@@ -14958,7 +15058,8 @@ const QUESTIONS_DATA = {
               "text": "Проїхати перехрестя другим, давши дорогу тільки чорному автомобілю.».",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_796.png"
         },
         {
           "id": "q_14_797",
@@ -15008,7 +15109,8 @@ const QUESTIONS_DATA = {
               "text": "Червоний, білий, синій автомобілі.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_799.png"
         },
         {
           "id": "q_14_800",
@@ -15034,7 +15136,8 @@ const QUESTIONS_DATA = {
               "text": "Останнім.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_14_800.png"
         },
         {
           "id": "q_14_801",
@@ -15150,7 +15253,8 @@ const QUESTIONS_DATA = {
               "text": "Велосипедисту заборонено повертати наліво в даній ситуації.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_806.png"
         },
         {
           "id": "q_14_807",
@@ -15360,8 +15464,7 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": false
             }
-          ],
-          "image": "images/q_14_818.png"
+          ]
         },
         {
           "id": "q_14_819",
@@ -15440,7 +15543,8 @@ const QUESTIONS_DATA = {
               "text": "По траєкторіях А і Б.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_15_822.png"
         },
         {
           "id": "q_15_823",
@@ -15454,7 +15558,8 @@ const QUESTIONS_DATA = {
               "text": "Не має права: виїзд на смугу йому заборонено.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_15_823.png"
         },
         {
           "id": "q_15_824",
@@ -15569,7 +15674,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволяється рух і зупинка тільки для таксі, мопедам, мотоциклам (за винятком мотоциклів з боковим причепом, мотоколясок, триколісних транспортних засобів) та велосипедистам.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_15_830.png"
         }
       ]
     },
@@ -15597,7 +15703,8 @@ const QUESTIONS_DATA = {
               "text": "Інформують про наявність небезпечного регульованого пішохідного переходу.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_16_831.png"
         },
         {
           "id": "q_16_832",
@@ -15615,7 +15722,8 @@ const QUESTIONS_DATA = {
               "text": "Зменшити швидкість, а в разі потреби зупинитися, щоб уникнути наїзду на дітей.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_16_832.png"
         },
         {
           "id": "q_16_833",
@@ -15633,7 +15741,8 @@ const QUESTIONS_DATA = {
               "text": "Зупинитися, щоб дати дорогу пішоходам. Продовжувати рух дозволяється лише тоді, коли пішоходи залишать проїзну частину, а двері трамвая зачиняться.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_16_833.png"
         },
         {
           "id": "q_16_834",
@@ -15666,7 +15775,8 @@ const QUESTIONS_DATA = {
               "text": "Знизити швидкість (у разі необхідності – зупинитися) і продовжити рух, тільки переконавшись, що на пішохідному переході немає пішоходів, для яких може бути створена перешкода чи небезпека.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_16_835.png"
         },
         {
           "id": "q_16_836",
@@ -15720,8 +15830,7 @@ const QUESTIONS_DATA = {
               "text": "Зупинитися, щоб дати дорогу пішоходам. Продовжувати рух дозволяється лише тоді, коли пішоходи залишать проїзну частину, а двері трамвая зачиняться.",
               "correct": true
             }
-          ],
-          "image": "images/q_16_838.png"
+          ]
         },
         {
           "id": "q_16_839",
@@ -15891,8 +16000,7 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 2 і 3.",
               "correct": false
             }
-          ],
-          "image": "images/q_16_847.png"
+          ]
         },
         {
           "id": "q_16_848",
@@ -16087,8 +16195,7 @@ const QUESTIONS_DATA = {
               "text": "Дозволено.",
               "correct": false
             }
-          ],
-          "image": "images/q_17_858.png"
+          ]
         },
         {
           "id": "q_17_859",
@@ -16170,8 +16277,7 @@ const QUESTIONS_DATA = {
               "text": "Переключитися на ближнє світло тільки на відстані 250 м.",
               "correct": false
             }
-          ],
-          "image": "images/q_17_863.png"
+          ]
         },
         {
           "id": "q_17_864",
@@ -16323,8 +16429,7 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 2.",
               "correct": false
             }
-          ],
-          "image": "images/q_17_871.png"
+          ]
         },
         {
           "id": "q_17_872",
@@ -16378,8 +16483,7 @@ const QUESTIONS_DATA = {
               "text": "У режимі протитуманних фар.",
               "correct": false
             }
-          ],
-          "image": "images/q_17_874.png"
+          ]
         },
         {
           "id": "q_17_875",
@@ -16452,7 +16556,8 @@ const QUESTIONS_DATA = {
               "text": "Відповідь 1 та 3.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_17_878.png"
         },
         {
           "id": "q_17_879",
@@ -16466,8 +16571,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_17_879.png"
+          ]
         },
         {
           "id": "q_17_880",
@@ -16495,7 +16599,8 @@ const QUESTIONS_DATA = {
               "text": "Так.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_17_881.png"
         },
         {
           "id": "q_17_882",
@@ -16529,8 +16634,7 @@ const QUESTIONS_DATA = {
               "text": "Дозволено.",
               "correct": true
             }
-          ],
-          "image": "images/q_18_883.png"
+          ]
         },
         {
           "id": "q_18_884",
@@ -16585,7 +16689,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволено на короткий час для пропуску легкового автомобіля.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_18_886.png"
         },
         {
           "id": "q_18_887",
@@ -16611,7 +16716,8 @@ const QUESTIONS_DATA = {
               "text": "Усім переліченим вище.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_18_887.png"
         },
         {
           "id": "q_18_888",
@@ -16687,8 +16793,7 @@ const QUESTIONS_DATA = {
               "text": "Проїхати залізничний переїзд, переконавшись, що до нього не наближається поїзд.",
               "correct": false
             }
-          ],
-          "image": "images/q_18_891.png"
+          ]
         },
         {
           "id": "q_18_892",
@@ -16974,7 +17079,8 @@ const QUESTIONS_DATA = {
               "text": "У жодному. Рух за цих умов заборонено.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_18_906.png"
         },
         {
           "id": "q_18_907",
@@ -17078,8 +17184,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_18_912.png"
+          ]
         },
         {
           "id": "q_18_913",
@@ -17179,8 +17284,7 @@ const QUESTIONS_DATA = {
               "text": "Дозволено в будь-якому випадку.",
               "correct": false
             }
-          ],
-          "image": "images/q_19_917.png"
+          ]
         },
         {
           "id": "q_19_918",
@@ -17224,8 +17328,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_19_919.png"
+          ]
         },
         {
           "id": "q_19_920",
@@ -17295,7 +17398,8 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_19_923.png"
         },
         {
           "id": "q_19_924",
@@ -17324,7 +17428,8 @@ const QUESTIONS_DATA = {
               "text": "У положенні, що забезпечує дитині комфортне перебування.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_19_925.png"
         }
       ]
     },
@@ -17486,8 +17591,7 @@ const QUESTIONS_DATA = {
               "text": "За умови, що фактична маса буксируваного транспортного засобу не перевищує половини фактичної маси транспортного засобу, що буксирує.",
               "correct": true
             }
-          ],
-          "image": "images/q_21_932.png"
+          ]
         },
         {
           "id": "q_21_933",
@@ -17920,7 +18024,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволена під час руху по навчальному маршруту.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_22_953.png"
         },
         {
           "id": "q_22_954",
@@ -17942,7 +18047,8 @@ const QUESTIONS_DATA = {
               "text": "Всіма зазначеними знаками.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_22_954.png"
         },
         {
           "id": "q_22_955",
@@ -17968,7 +18074,8 @@ const QUESTIONS_DATA = {
               "text": "Знаками 1, 2 і 5.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_22_955.png"
         },
         {
           "id": "q_22_956",
@@ -17990,8 +18097,7 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2 і 3.",
               "correct": false
             }
-          ],
-          "image": "images/q_22_956.png"
+          ]
         },
         {
           "id": "q_22_957",
@@ -18363,7 +18469,8 @@ const QUESTIONS_DATA = {
               "text": "Дворові території, а також частини населених пунктів, позначені дорожнім знаком 5.34.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_24_974.png"
         },
         {
           "id": "q_24_975",
@@ -18381,7 +18488,8 @@ const QUESTIONS_DATA = {
               "text": "Пішоходу і автомобілю.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_24_975.png"
         },
         {
           "id": "q_24_976",
@@ -18439,7 +18547,8 @@ const QUESTIONS_DATA = {
               "text": "Пішоходу і автомобілю.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_24_978.png"
         },
         {
           "id": "q_24_979",
@@ -18453,7 +18562,8 @@ const QUESTIONS_DATA = {
               "text": "Не повинен.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_24_979.png"
         },
         {
           "id": "q_24_980",
@@ -18551,7 +18661,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 2.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_24_984.png"
         },
         {
           "id": "q_24_985",
@@ -18647,7 +18758,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 2 і 3.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_25_989.png"
         },
         {
           "id": "q_25_990",
@@ -18673,7 +18785,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2 і 3.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_25_990.png"
         },
         {
           "id": "q_25_991",
@@ -18713,8 +18826,7 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2 і 3.",
               "correct": false
             }
-          ],
-          "image": "images/q_25_992.png"
+          ]
         },
         {
           "id": "q_25_993",
@@ -19097,7 +19209,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 2 і 3.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_28_1011.png"
         },
         {
           "id": "q_28_1012",
@@ -19137,7 +19250,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2 і 3.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_28_1013.png"
         },
         {
           "id": "q_28_1014",
@@ -19197,7 +19311,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 2.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_28_1016.png"
         },
         {
           "id": "q_28_1017",
@@ -19219,8 +19334,7 @@ const QUESTIONS_DATA = {
               "text": "Четвертим.",
               "correct": false
             }
-          ],
-          "image": "images/q_28_1017.png"
+          ]
         },
         {
           "id": "q_28_1018",
@@ -19238,7 +19352,8 @@ const QUESTIONS_DATA = {
               "text": "Перевозять пасажирів, велика частина з яких діти.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_28_1018.png"
         },
         {
           "id": "q_28_1019",
@@ -19275,7 +19390,8 @@ const QUESTIONS_DATA = {
               "text": "На транспортних засобах, якими керують глухі або глухонімі водії.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_28_1020.png"
         },
         {
           "id": "q_28_1021",
@@ -19315,8 +19431,7 @@ const QUESTIONS_DATA = {
               "text": "14 діб.",
               "correct": false
             }
-          ],
-          "image": "images/q_28_1022.png"
+          ]
         }
       ]
     },
@@ -19818,7 +19933,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1047.png"
         },
         {
           "id": "q_31_1048",
@@ -19867,7 +19983,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1049.png"
         },
         {
           "id": "q_31_1050",
@@ -19948,7 +20065,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1053.png"
         },
         {
           "id": "q_31_1054",
@@ -19974,7 +20092,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2 і 3.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1054.png"
         },
         {
           "id": "q_31_1055",
@@ -20056,8 +20175,7 @@ const QUESTIONS_DATA = {
               "text": "З лівого боку.",
               "correct": true
             }
-          ],
-          "image": "images/q_31_1058.png"
+          ]
         },
         {
           "id": "q_31_1059",
@@ -20089,7 +20207,8 @@ const QUESTIONS_DATA = {
               "text": "На перехресті з круговим рухом; вимагає об'їзду клумби в напрямку, показаному стрілками.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1060.png"
         },
         {
           "id": "q_31_1061",
@@ -20141,7 +20260,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2 і 3.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1062.png"
         },
         {
           "id": "q_31_1063",
@@ -20207,7 +20327,8 @@ const QUESTIONS_DATA = {
               "text": "Усім учасникам руху.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1065.png"
         },
         {
           "id": "q_31_1066",
@@ -20233,7 +20354,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1066.png"
         },
         {
           "id": "q_31_1067",
@@ -20304,7 +20426,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1069.png"
         },
         {
           "id": "q_31_1070",
@@ -20330,7 +20453,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1070.png"
         },
         {
           "id": "q_31_1071",
@@ -20508,7 +20632,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1078.png"
         },
         {
           "id": "q_31_1079",
@@ -20717,7 +20842,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2 і 3.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1088.png"
         },
         {
           "id": "q_31_1089",
@@ -20769,7 +20895,8 @@ const QUESTIONS_DATA = {
               "text": "У будь-якому місці.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1090.png"
         },
         {
           "id": "q_31_1091",
@@ -20813,7 +20940,8 @@ const QUESTIONS_DATA = {
               "text": "У будь-якому місці.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1092.png"
         },
         {
           "id": "q_31_1093",
@@ -20902,7 +21030,8 @@ const QUESTIONS_DATA = {
               "text": "З 7:00 до 24:00.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1096.png"
         },
         {
           "id": "q_31_1097",
@@ -20934,8 +21063,7 @@ const QUESTIONS_DATA = {
               "text": "Стоянку транспортних засобів.",
               "correct": true
             }
-          ],
-          "image": "images/q_31_1098.png"
+          ]
         },
         {
           "id": "q_31_1099",
@@ -20953,7 +21081,8 @@ const QUESTIONS_DATA = {
               "text": "Обидва поставлені правильно.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1099.png"
         },
         {
           "id": "q_31_1100",
@@ -20975,7 +21104,8 @@ const QUESTIONS_DATA = {
               "text": "З білою суцільною лінією розмітки, яка наноситься біля краю проїзної частини або по верху бордюру.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1100.png"
         },
         {
           "id": "q_31_1101",
@@ -21045,7 +21175,8 @@ const QUESTIONS_DATA = {
               "text": "Водії білого і фіолетового автомобілів.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1103.png"
         },
         {
           "id": "q_31_1104",
@@ -21063,7 +21194,8 @@ const QUESTIONS_DATA = {
               "text": "Обидва водії.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1104.png"
         },
         {
           "id": "q_31_1105",
@@ -21137,7 +21269,8 @@ const QUESTIONS_DATA = {
               "text": "У місці Б або В.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1107.png"
         },
         {
           "id": "q_31_1108",
@@ -21292,7 +21425,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2, 3 і 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1114.png"
         },
         {
           "id": "q_31_1115",
@@ -21434,7 +21568,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1121.png"
         },
         {
           "id": "q_31_1122",
@@ -21497,7 +21632,8 @@ const QUESTIONS_DATA = {
               "text": "Обов'язково зупинитися перед позначеним місцем.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1124.png"
         },
         {
           "id": "q_31_1125",
@@ -21529,8 +21665,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_31_1126.png"
+          ]
         },
         {
           "id": "q_31_1127",
@@ -21552,8 +21687,7 @@ const QUESTIONS_DATA = {
               "text": "Дозволено тільки в другий проїзд.",
               "correct": true
             }
-          ],
-          "image": "images/q_31_1127.png"
+          ]
         },
         {
           "id": "q_31_1128",
@@ -21567,7 +21701,8 @@ const QUESTIONS_DATA = {
               "text": "Тільки прямо.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1128.png"
         },
         {
           "id": "q_31_1129",
@@ -21585,7 +21720,8 @@ const QUESTIONS_DATA = {
               "text": "Перестроїтися на праву смугу лише в тому разі, якщо є перешкода.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1129.png"
         },
         {
           "id": "q_31_1130",
@@ -21657,7 +21793,8 @@ const QUESTIONS_DATA = {
               "text": "З будь-яким із перелічених вище знаків.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1132.png"
         },
         {
           "id": "q_31_1133",
@@ -21715,7 +21852,8 @@ const QUESTIONS_DATA = {
               "text": "З табличкою 5.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1135.png"
         },
         {
           "id": "q_31_1136",
@@ -21822,7 +21960,8 @@ const QUESTIONS_DATA = {
               "text": "Протяжність небезпечної ділянки або зону дії заборонних та інформаційно- вказівних знаків.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1140.png"
         },
         {
           "id": "q_31_1141",
@@ -22079,7 +22218,8 @@ const QUESTIONS_DATA = {
               "text": "Застосовуються тільки зі знаком обмеження швидкості.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1153.png"
         },
         {
           "id": "q_31_1154",
@@ -22215,7 +22355,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1159.png"
         },
         {
           "id": "q_31_1160",
@@ -22268,7 +22409,8 @@ const QUESTIONS_DATA = {
               "text": "Усі перелічені вище таблички.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1161.png"
         },
         {
           "id": "q_31_1162",
@@ -22373,8 +22515,7 @@ const QUESTIONS_DATA = {
               "text": "Табличка 5.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1166.png"
+          ]
         },
         {
           "id": "q_31_1167",
@@ -22415,7 +22556,8 @@ const QUESTIONS_DATA = {
               "text": "Зі знаком 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1168.png"
         },
         {
           "id": "q_31_1169",
@@ -22558,7 +22700,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1175.png"
         },
         {
           "id": "q_31_1176",
@@ -22837,7 +22980,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1188.png"
         },
         {
           "id": "q_31_1189",
@@ -22859,7 +23003,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1189.png"
         },
         {
           "id": "q_31_1190",
@@ -23189,7 +23334,8 @@ const QUESTIONS_DATA = {
               "text": "Знаки 1, 2, 3.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1205.png"
         },
         {
           "id": "q_31_1206",
@@ -23211,7 +23357,8 @@ const QUESTIONS_DATA = {
               "text": "Пішохідні доріжки.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1206.png"
         },
         {
           "id": "q_31_1207",
@@ -23299,8 +23446,7 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2 і 3.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1210.png"
+          ]
         },
         {
           "id": "q_31_1211",
@@ -23358,7 +23504,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1213.png"
         },
         {
           "id": "q_31_1214",
@@ -23440,7 +23587,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 3.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1217.png"
         },
         {
           "id": "q_31_1218",
@@ -23458,7 +23606,8 @@ const QUESTIONS_DATA = {
               "text": "Спільно з другим із знаків «Залізничний переїзд із шлагбаумом» або «Залізничний переїзд без шлагбаума».",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1218.png"
         },
         {
           "id": "q_31_1219",
@@ -23476,7 +23625,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 3.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1219.png"
         },
         {
           "id": "q_31_1220",
@@ -23615,7 +23765,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2 і 3.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1225.png"
         },
         {
           "id": "q_31_1226",
@@ -23686,7 +23837,8 @@ const QUESTIONS_DATA = {
               "text": "Про наближення до ділянки дороги, на якій починається багатосмугова дорога.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1228.png"
         },
         {
           "id": "q_31_1229",
@@ -23708,7 +23860,8 @@ const QUESTIONS_DATA = {
               "text": "Місцем перетину дороги з трамвайною колією.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1229.png"
         },
         {
           "id": "q_31_1230",
@@ -23775,7 +23928,8 @@ const QUESTIONS_DATA = {
               "text": "Перед залізничним переїздом без шлагбаума, розташованим за межами населеного пункту.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1232.png"
         },
         {
           "id": "q_31_1233",
@@ -23841,7 +23995,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1235.png"
         },
         {
           "id": "q_31_1236",
@@ -23938,8 +24093,7 @@ const QUESTIONS_DATA = {
               "text": "Знаки 1, 2 і 3.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1239.png"
+          ]
         },
         {
           "id": "q_31_1240",
@@ -24013,7 +24167,8 @@ const QUESTIONS_DATA = {
               "text": "Необов’язкова.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1243.png"
         },
         {
           "id": "q_31_1244",
@@ -24039,7 +24194,8 @@ const QUESTIONS_DATA = {
               "text": "Знаки 1 і 2.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1244.png"
         },
         {
           "id": "q_31_1245",
@@ -24065,7 +24221,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1245.png"
         },
         {
           "id": "q_31_1246",
@@ -24194,7 +24351,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1251.png"
         },
         {
           "id": "q_31_1252",
@@ -24212,8 +24370,7 @@ const QUESTIONS_DATA = {
               "text": "Правильні обидва варіанти.",
               "correct": true
             }
-          ],
-          "image": "images/q_31_1252.png"
+          ]
         },
         {
           "id": "q_31_1253",
@@ -24326,7 +24483,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 2, 3 і 4.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1257.png"
         },
         {
           "id": "q_31_1258",
@@ -24367,7 +24525,8 @@ const QUESTIONS_DATA = {
               "text": "Перед звуженням дороги з обох боків.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1259.png"
         },
         {
           "id": "q_31_1260",
@@ -24408,7 +24567,8 @@ const QUESTIONS_DATA = {
               "text": "Про закінчення дороги з розділювальною смугою.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1261.png"
         },
         {
           "id": "q_31_1262",
@@ -24485,7 +24645,8 @@ const QUESTIONS_DATA = {
               "text": "У місцях напрямку повороту дороги.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1265.png"
         },
         {
           "id": "q_31_1266",
@@ -24577,7 +24738,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1269.png"
         },
         {
           "id": "q_31_1270",
@@ -24662,8 +24824,7 @@ const QUESTIONS_DATA = {
               "text": "Про наближення до ділянки дороги з дев'ятьма небезпечними поворотами – з першим праворуч.",
               "correct": true
             }
-          ],
-          "image": "images/q_31_1273.png"
+          ]
         },
         {
           "id": "q_31_1274",
@@ -24766,7 +24927,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1278.png"
         },
         {
           "id": "q_31_1279",
@@ -24788,7 +24950,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1279.png"
         },
         {
           "id": "q_31_1280",
@@ -24832,8 +24995,7 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1281.png"
+          ]
         },
         {
           "id": "q_31_1282",
@@ -24877,7 +25039,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1283.png"
         },
         {
           "id": "q_31_1284",
@@ -25042,7 +25205,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1291.png"
         },
         {
           "id": "q_31_1292",
@@ -25064,7 +25228,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1292.png"
         },
         {
           "id": "q_31_1293",
@@ -25108,8 +25273,7 @@ const QUESTIONS_DATA = {
               "text": "Є нерівності проїзної частини – хвилястості, напливи, спучування.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1294.png"
+          ]
         },
         {
           "id": "q_31_1295",
@@ -25253,8 +25417,7 @@ const QUESTIONS_DATA = {
               "text": "Дозволено.",
               "correct": true
             }
-          ],
-          "image": "images/q_31_1301.png"
+          ]
         },
         {
           "id": "q_31_1302",
@@ -25375,7 +25538,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2, 3 і 4.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1307.png"
         },
         {
           "id": "q_31_1308",
@@ -25468,8 +25632,7 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1311.png"
+          ]
         },
         {
           "id": "q_31_1312",
@@ -25483,8 +25646,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_31_1312.png"
+          ]
         },
         {
           "id": "q_31_1313",
@@ -25528,8 +25690,7 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 2.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1314.png"
+          ]
         },
         {
           "id": "q_31_1315",
@@ -25587,7 +25748,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 3.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1317.png"
         },
         {
           "id": "q_31_1318",
@@ -25623,8 +25785,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_31_1319.png"
+          ]
         },
         {
           "id": "q_31_1320",
@@ -25673,7 +25834,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1321.png"
         },
         {
           "id": "q_31_1322",
@@ -25740,7 +25902,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1324.png"
         },
         {
           "id": "q_31_1325",
@@ -25812,8 +25975,7 @@ const QUESTIONS_DATA = {
               "text": "Дозволено.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1328.png"
+          ]
         },
         {
           "id": "q_31_1329",
@@ -25835,7 +25997,8 @@ const QUESTIONS_DATA = {
               "text": "На трактори.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1329.png"
         },
         {
           "id": "q_31_1330",
@@ -25849,8 +26012,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1330.png"
+          ]
         },
         {
           "id": "q_31_1331",
@@ -25886,8 +26048,7 @@ const QUESTIONS_DATA = {
               "text": "Обидві відповіді правильні.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1332.png"
+          ]
         },
         {
           "id": "q_31_1333",
@@ -25923,7 +26084,8 @@ const QUESTIONS_DATA = {
               "text": "Випередження усіх транспортних засобів, крім поодиноких, що рухаються із швидкістю менше 30 км/год.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1334.png"
         },
         {
           "id": "q_31_1335",
@@ -25941,7 +26103,8 @@ const QUESTIONS_DATA = {
               "text": "Дія зображеного дорожнього знака поширюється на всі без винятку транспортні засоби.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1335.png"
         },
         {
           "id": "q_31_1336",
@@ -25967,7 +26130,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1336.png"
         },
         {
           "id": "q_31_1337",
@@ -26011,7 +26175,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1338.png"
         },
         {
           "id": "q_31_1339",
@@ -26037,7 +26202,8 @@ const QUESTIONS_DATA = {
               "text": "Знаки 1 і 2.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1339.png"
         },
         {
           "id": "q_31_1340",
@@ -26063,7 +26229,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1340.png"
         },
         {
           "id": "q_31_1341",
@@ -26099,7 +26266,8 @@ const QUESTIONS_DATA = {
               "text": "Проїдете другим, не маючи переваги.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1342.png"
         },
         {
           "id": "q_31_1343",
@@ -26113,7 +26281,8 @@ const QUESTIONS_DATA = {
               "text": "Водій вантажного автомобіля.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1343.png"
         },
         {
           "id": "q_31_1344",
@@ -26139,7 +26308,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1344.png"
         },
         {
           "id": "q_31_1345",
@@ -26165,7 +26335,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1345.png"
         },
         {
           "id": "q_31_1346",
@@ -26205,7 +26376,8 @@ const QUESTIONS_DATA = {
               "text": "Маючи перевагу, проїхати першим.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1347.png"
         },
         {
           "id": "q_31_1348",
@@ -26241,7 +26413,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1349.png"
         },
         {
           "id": "q_31_1350",
@@ -26345,7 +26518,8 @@ const QUESTIONS_DATA = {
               "text": "Обидва знаки.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1355.png"
         },
         {
           "id": "q_31_1356",
@@ -26371,7 +26545,8 @@ const QUESTIONS_DATA = {
               "text": "Знаки 1 і 2.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1356.png"
         },
         {
           "id": "q_31_1357",
@@ -26443,8 +26618,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_31_1360.png"
+          ]
         },
         {
           "id": "q_31_1361",
@@ -26470,7 +26644,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 2 і 3.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1361.png"
         },
         {
           "id": "q_31_1362",
@@ -26498,8 +26673,7 @@ const QUESTIONS_DATA = {
               "text": "Дозволено.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1363.png"
+          ]
         },
         {
           "id": "q_31_1364",
@@ -26551,8 +26725,7 @@ const QUESTIONS_DATA = {
               "text": "Мопеди і велосипеди.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1365.png"
+          ]
         },
         {
           "id": "q_31_1366",
@@ -26584,8 +26757,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1367.png"
+          ]
         },
         {
           "id": "q_31_1368",
@@ -26678,8 +26850,7 @@ const QUESTIONS_DATA = {
               "text": "Дозволено.",
               "correct": true
             }
-          ],
-          "image": "images/q_31_1371.png"
+          ]
         },
         {
           "id": "q_31_1372",
@@ -26693,8 +26864,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1372.png"
+          ]
         },
         {
           "id": "q_31_1373",
@@ -26708,8 +26878,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_31_1373.png"
+          ]
         },
         {
           "id": "q_31_1374",
@@ -26723,8 +26892,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1374.png"
+          ]
         },
         {
           "id": "q_31_1375",
@@ -26831,7 +26999,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1, 2 і 3.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1378.png"
         },
         {
           "id": "q_31_1379",
@@ -26857,7 +27026,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1379.png"
         },
         {
           "id": "q_31_1380",
@@ -26901,7 +27071,8 @@ const QUESTIONS_DATA = {
               "text": "50 – 100 м.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1381.png"
         },
         {
           "id": "q_31_1382",
@@ -26959,7 +27130,8 @@ const QUESTIONS_DATA = {
               "text": "Пішохідну доріжку.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1384.png"
         },
         {
           "id": "q_31_1385",
@@ -26995,7 +27167,8 @@ const QUESTIONS_DATA = {
               "text": "Ділянки, де можливе падіння каміння.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1386.png"
         },
         {
           "id": "q_31_1387",
@@ -27031,8 +27204,7 @@ const QUESTIONS_DATA = {
               "text": "Суміжну пішохідну та велосипедну доріжки.",
               "correct": true
             }
-          ],
-          "image": "images/q_31_1388.png"
+          ]
         },
         {
           "id": "q_31_1389",
@@ -27068,8 +27240,7 @@ const QUESTIONS_DATA = {
               "text": "Де велосипедна доріжка перетинає проїзну частину.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1390.png"
+          ]
         },
         {
           "id": "q_31_1391",
@@ -27083,8 +27254,7 @@ const QUESTIONS_DATA = {
               "text": "Назустріч загальному потоку.",
               "correct": false
             }
-          ],
-          "image": "images/q_31_1391.png"
+          ]
         },
         {
           "id": "q_31_1392",
@@ -27188,7 +27358,8 @@ const QUESTIONS_DATA = {
               "text": "Зону для пішоходів і велосипедистів.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1397.png"
         },
         {
           "id": "q_31_1398",
@@ -27224,7 +27395,8 @@ const QUESTIONS_DATA = {
               "text": "Зазначення розташування майданчиків для стоянки відносно дороги.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1399.png"
         },
         {
           "id": "q_31_1400",
@@ -27322,7 +27494,8 @@ const QUESTIONS_DATA = {
               "text": "Означає бордюри на небезпечних ділянках доріг.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_32_1404.png"
         },
         {
           "id": "q_32_1405",
@@ -27340,8 +27513,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_32_1405.png"
+          ]
         },
         {
           "id": "q_32_1406",
@@ -27382,7 +27554,8 @@ const QUESTIONS_DATA = {
               "text": "Жоден з вищеперерахованих маневрів не заборонено..",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_32_1407.png"
         },
         {
           "id": "q_32_1408",
@@ -27437,7 +27610,8 @@ const QUESTIONS_DATA = {
               "text": "Номер дороги або маршруту.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_32_1410.png"
         },
         {
           "id": "q_32_1411",
@@ -27512,7 +27686,8 @@ const QUESTIONS_DATA = {
               "text": "По будь-якій.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_32_1414.png"
         },
         {
           "id": "q_32_1415",
@@ -27567,8 +27742,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": false
             }
-          ],
-          "image": "images/q_32_1417.png"
+          ]
         },
         {
           "id": "q_32_1418",
@@ -27586,7 +27760,8 @@ const QUESTIONS_DATA = {
               "text": "Дозволяє Вам поворот ліворуч і розворот.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_32_1418.png"
         },
         {
           "id": "q_32_1419",
@@ -27622,8 +27797,7 @@ const QUESTIONS_DATA = {
               "text": "Про рух по небезпечній ділянці дороги.",
               "correct": true
             }
-          ],
-          "image": "images/q_32_1420.png"
+          ]
         },
         {
           "id": "q_32_1421",
@@ -27675,7 +27849,8 @@ const QUESTIONS_DATA = {
               "text": "Торцеві частини штучних споруд.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_32_1423.png"
         },
         {
           "id": "q_32_1424",
@@ -27689,8 +27864,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_32_1424.png"
+          ]
         },
         {
           "id": "q_32_1425",
@@ -27712,7 +27886,8 @@ const QUESTIONS_DATA = {
               "text": "У будь-якому місці на розсуд водія.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_32_1425.png"
         },
         {
           "id": "q_32_1426",
@@ -27734,7 +27909,8 @@ const QUESTIONS_DATA = {
               "text": "Обидва не порушують.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_32_1426.png"
         },
         {
           "id": "q_32_1427",
@@ -27771,8 +27947,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_32_1428.png"
+          ]
         },
         {
           "id": "q_32_1429",
@@ -27932,8 +28107,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_32_1437.png"
+          ]
         }
       ]
     },
@@ -28265,8 +28439,7 @@ const QUESTIONS_DATA = {
               "text": "Сприйняття швидкості не змінюється.",
               "correct": false
             }
-          ],
-          "image": "images/q_33_1456.png"
+          ]
         },
         {
           "id": "q_33_1457",
@@ -28600,8 +28773,7 @@ const QUESTIONS_DATA = {
               "text": "Сприйняття швидкості не змінюється.",
               "correct": false
             }
-          ],
-          "image": "images/q_33_1475.png"
+          ]
         },
         {
           "id": "q_33_1476",
@@ -28713,7 +28885,8 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_33_1482.png"
         },
         {
           "id": "q_33_1483",
@@ -29119,7 +29292,8 @@ const QUESTIONS_DATA = {
               "text": "Регулярні зупинки для відпочинку та вживання питної води (за наявності).",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_33_1507.png"
         },
         {
           "id": "q_33_1508",
@@ -29275,7 +29449,8 @@ const QUESTIONS_DATA = {
               "text": "Зменшити швидкість та дозволити йому здійснити маневр перестроювання.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_33_1516.png"
         },
         {
           "id": "q_33_1517",
@@ -29293,7 +29468,8 @@ const QUESTIONS_DATA = {
               "text": "Зменшити швидкість та дозволити йому здійснити маневр перестроювання.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_33_1517.png"
         },
         {
           "id": "q_33_1518",
@@ -29361,7 +29537,8 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_33_1521.png"
         },
         {
           "id": "q_33_1522",
@@ -29493,7 +29670,8 @@ const QUESTIONS_DATA = {
               "text": "Не потрібно, якщо водії, що рухаються попереду не зменшують.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_33_1529.png"
         },
         {
           "id": "q_33_1530",
@@ -29507,7 +29685,8 @@ const QUESTIONS_DATA = {
               "text": "Не правильно.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_33_1530.png"
         },
         {
           "id": "q_33_1531",
@@ -29558,7 +29737,8 @@ const QUESTIONS_DATA = {
               "text": "Зона C.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_33_1533.png"
         },
         {
           "id": "q_33_1534",
@@ -29640,7 +29820,8 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_33_1538.png"
         },
         {
           "id": "q_33_1539",
@@ -29786,7 +29967,8 @@ const QUESTIONS_DATA = {
               "text": "Ні, оскільки розмова ніяк не обмежує оглядовість водієві.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_33_1547.png"
         },
         {
           "id": "q_33_1548",
@@ -29804,7 +29986,8 @@ const QUESTIONS_DATA = {
               "text": "Збільшити швидкість для швидкого перетину перехрестя.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_33_1548.png"
         },
         {
           "id": "q_33_1549",
@@ -29822,7 +30005,8 @@ const QUESTIONS_DATA = {
               "text": "Всі відповіді вірні.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_33_1549.png"
         },
         {
           "id": "q_33_1550",
@@ -29873,7 +30057,8 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_33_1552.png"
         },
         {
           "id": "q_33_1553",
@@ -29916,7 +30101,8 @@ const QUESTIONS_DATA = {
               "text": "Так.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_33_1555.png"
         },
         {
           "id": "q_33_1556",
@@ -29949,8 +30135,7 @@ const QUESTIONS_DATA = {
               "text": "Керувати транспортним засобом заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_33_1557.png"
+          ]
         },
         {
           "id": "q_33_1558",
@@ -30101,7 +30286,8 @@ const QUESTIONS_DATA = {
               "text": "Збільшити швидкість.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_33_1565.png"
         },
         {
           "id": "q_33_1566",
@@ -30115,7 +30301,8 @@ const QUESTIONS_DATA = {
               "text": "Недостатньо.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_33_1566.png"
         },
         {
           "id": "q_33_1567",
@@ -30396,7 +30583,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 2 і 3.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_33_1581.png"
         },
         {
           "id": "q_33_1582",
@@ -30468,7 +30656,8 @@ const QUESTIONS_DATA = {
               "text": "Відносно лінії, що розділяє транспортні потоки протилежних напрямків",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_33_1585.png"
         },
         {
           "id": "q_33_1586",
@@ -30509,7 +30698,8 @@ const QUESTIONS_DATA = {
               "text": "Неприпустима жодна з перерахованих дій.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_33_1587.png"
         },
         {
           "id": "q_33_1588",
@@ -30538,7 +30728,8 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_33_1589.png"
         },
         {
           "id": "q_33_1590",
@@ -30556,8 +30747,7 @@ const QUESTIONS_DATA = {
               "text": "Дозволено в будь-якому випадку.",
               "correct": false
             }
-          ],
-          "image": "images/q_33_1590.png"
+          ]
         },
         {
           "id": "q_33_1591",
@@ -30697,7 +30887,8 @@ const QUESTIONS_DATA = {
               "text": "Буду зберігати спокій, за необхідності зменшу швидкість, буду готовим зупинитись та продовжу уважно слідкувати за дорожньою обстановкою.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_33_1598.png"
         },
         {
           "id": "q_33_1599",
@@ -30831,7 +31022,8 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_33_1607.png"
         },
         {
           "id": "q_33_1608",
@@ -32086,7 +32278,8 @@ const QUESTIONS_DATA = {
               "text": "Керуєтеся ПДР та діями іншого водія.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_36_1677.png"
         },
         {
           "id": "q_36_1678",
@@ -32406,8 +32599,7 @@ const QUESTIONS_DATA = {
               "text": "Так, якщо пошкоджено не більше 5 ТЗ.",
               "correct": false
             }
-          ],
-          "image": "images/q_37_1693.png"
+          ]
         },
         {
           "id": "q_37_1694",
@@ -32497,7 +32689,8 @@ const QUESTIONS_DATA = {
               "text": "Обидва повинні рухатися зі швидкістю не більш ніж 80 км/год.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_38_1697.png"
         },
         {
           "id": "q_38_1698",
@@ -32533,7 +32726,8 @@ const QUESTIONS_DATA = {
               "text": "Правильні обидва варіанти.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_38_1699.png"
         },
         {
           "id": "q_38_1700",
@@ -32617,8 +32811,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": false
             }
-          ],
-          "image": "images/q_38_1703.png"
+          ]
         },
         {
           "id": "q_38_1704",
@@ -32709,8 +32902,7 @@ const QUESTIONS_DATA = {
               "text": "Дозволено.",
               "correct": true
             }
-          ],
-          "image": "images/q_38_1708.png"
+          ]
         },
         {
           "id": "q_38_1709",
@@ -33298,7 +33490,8 @@ const QUESTIONS_DATA = {
               "text": "Розвантажується.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_39_1740.png"
         }
       ]
     },
@@ -33753,7 +33946,8 @@ const QUESTIONS_DATA = {
               "text": "Не зобов'язані під час руху в населених пунктах.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_41_1761.png"
         },
         {
           "id": "q_41_1762",
@@ -34755,8 +34949,7 @@ const QUESTIONS_DATA = {
               "text": "Більше дев'яти.",
               "correct": false
             }
-          ],
-          "image": "images/q_42_1809.png"
+          ]
         },
         {
           "id": "q_42_1810",
@@ -34816,8 +35009,7 @@ const QUESTIONS_DATA = {
               "text": "Вимога обов'язкової зупинки перед дорожнім знаком «Дати дорогу».",
               "correct": false
             }
-          ],
-          "image": "images/q_43_1812.png"
+          ]
         },
         {
           "id": "q_43_1813",
@@ -35079,7 +35271,8 @@ const QUESTIONS_DATA = {
               "text": "Відсутність палива у паливному баку.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_43_1825.png"
         },
         {
           "id": "q_43_1826",
@@ -35097,8 +35290,7 @@ const QUESTIONS_DATA = {
               "text": "Відчинені двері багажника.",
               "correct": false
             }
-          ],
-          "image": "images/q_43_1826.png"
+          ]
         },
         {
           "id": "q_43_1827",
@@ -35176,7 +35368,8 @@ const QUESTIONS_DATA = {
               "text": "Низький рівень палива у паливному баку.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_43_1830.png"
         },
         {
           "id": "q_43_1831",
@@ -35208,8 +35401,7 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": false
             }
-          ],
-          "image": "images/q_43_1832.png"
+          ]
         },
         {
           "id": "q_43_1833",
@@ -35227,7 +35419,8 @@ const QUESTIONS_DATA = {
               "text": "Про несправність гальмової системи.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_43_1833.png"
         },
         {
           "id": "q_43_1834",
@@ -35260,8 +35453,7 @@ const QUESTIONS_DATA = {
               "text": "Несправність керма.",
               "correct": false
             }
-          ],
-          "image": "images/q_43_1835.png"
+          ]
         },
         {
           "id": "q_43_1836",
@@ -35275,7 +35467,8 @@ const QUESTIONS_DATA = {
               "text": "Індикатор зеленого кольору.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_43_1836.png"
         },
         {
           "id": "q_43_1837",
@@ -35289,7 +35482,8 @@ const QUESTIONS_DATA = {
               "text": "Індикатор зеленого кольору.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_43_1837.png"
         },
         {
           "id": "q_43_1838",
@@ -35307,8 +35501,7 @@ const QUESTIONS_DATA = {
               "text": "Низький рівень палива у паливному баку.",
               "correct": false
             }
-          ],
-          "image": "images/q_43_1838.png"
+          ]
         },
         {
           "id": "q_43_1839",
@@ -35334,7 +35527,8 @@ const QUESTIONS_DATA = {
               "text": "4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_43_1839.png"
         },
         {
           "id": "q_43_1840",
@@ -35356,8 +35550,7 @@ const QUESTIONS_DATA = {
               "text": "4.",
               "correct": false
             }
-          ],
-          "image": "images/q_43_1840.png"
+          ]
         },
         {
           "id": "q_43_1841",
@@ -35776,7 +35969,8 @@ const QUESTIONS_DATA = {
               "text": "На задньому сидінні.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_45_1859.png"
         }
       ]
     },
@@ -35870,8 +36064,7 @@ const QUESTIONS_DATA = {
               "text": "Прямо або на розворот.",
               "correct": true
             }
-          ],
-          "image": "images/q_46_1863.png"
+          ]
         },
         {
           "id": "q_46_1864",
@@ -35885,8 +36078,7 @@ const QUESTIONS_DATA = {
               "text": "Дозволено.",
               "correct": true
             }
-          ],
-          "image": "images/q_46_1864.png"
+          ]
         },
         {
           "id": "q_46_1865",
@@ -35939,8 +36131,7 @@ const QUESTIONS_DATA = {
               "text": "Знак 5.",
               "correct": false
             }
-          ],
-          "image": "images/q_46_1866.png"
+          ]
         },
         {
           "id": "q_46_1867",
@@ -36000,8 +36191,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": false
             }
-          ],
-          "image": "images/q_46_1870.png"
+          ]
         },
         {
           "id": "q_46_1871",
@@ -36208,7 +36398,8 @@ const QUESTIONS_DATA = {
               "text": "110 км/год.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_46_1881.png"
         },
         {
           "id": "q_46_1882",
@@ -36252,8 +36443,7 @@ const QUESTIONS_DATA = {
               "text": "130 км/год.",
               "correct": true
             }
-          ],
-          "image": "images/q_46_1883.png"
+          ]
         },
         {
           "id": "q_46_1884",
@@ -36341,7 +36531,8 @@ const QUESTIONS_DATA = {
               "text": "Від вимог знаку 3.2 «Рух механічних транспортних засобів заборонено».",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_46_1887.png"
         },
         {
           "id": "q_46_1888",
@@ -36465,7 +36656,8 @@ const QUESTIONS_DATA = {
               "text": "Синій, зелений і вантажний з дозволеною масою понад 3,5 т, без процесу завантаження чи розвантаження.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_46_1892.png"
         },
         {
           "id": "q_46_1893",
@@ -36590,8 +36782,7 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 2.",
               "correct": true
             }
-          ],
-          "image": "images/q_46_1898.png"
+          ]
         },
         {
           "id": "q_46_1899",
@@ -36609,8 +36800,7 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 2.",
               "correct": false
             }
-          ],
-          "image": "images/q_46_1899.png"
+          ]
         },
         {
           "id": "q_46_1900",
@@ -36628,7 +36818,8 @@ const QUESTIONS_DATA = {
               "text": "Має право виїхати для об'їзду перешкоди або обгону, а також для повороту ліворуч.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_46_1900.png"
         },
         {
           "id": "q_46_1901",
@@ -36646,7 +36837,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 2.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_46_1901.png"
         },
         {
           "id": "q_46_1902",
@@ -36660,7 +36852,8 @@ const QUESTIONS_DATA = {
               "text": "Керуватися правилами проїзду рівнозначних перехресть.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_46_1902.png"
         },
         {
           "id": "q_46_1903",
@@ -36727,8 +36920,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_46_1905.png"
+          ]
         },
         {
           "id": "q_46_1906",
@@ -36790,7 +36982,8 @@ const QUESTIONS_DATA = {
               "text": "Перший і третій.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_46_1908.png"
         },
         {
           "id": "q_46_1909",
@@ -36804,8 +36997,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": false
             }
-          ],
-          "image": "images/q_46_1909.png"
+          ]
         },
         {
           "id": "q_46_1910",
@@ -37493,7 +37685,8 @@ const QUESTIONS_DATA = {
               "text": "Місця, де може зупинитися вантажний автомобіль, фургон тощо, виключно на час, необхідний для розвантаження/завантаження.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_46_1947.png"
         }
       ]
     },
@@ -37517,7 +37710,8 @@ const QUESTIONS_DATA = {
               "text": "Вантаж.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_47_1948.png"
         },
         {
           "id": "q_47_1949",
@@ -38625,8 +38819,7 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 2.",
               "correct": true
             }
-          ],
-          "image": "images/q_48_2007.png"
+          ]
         },
         {
           "id": "q_48_2008",
@@ -38752,7 +38945,8 @@ const QUESTIONS_DATA = {
               "text": "Усе перелічене вище.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_48_2014.png"
         }
       ]
     },
@@ -39737,8 +39931,7 @@ const QUESTIONS_DATA = {
               "text": "130 км/год.",
               "correct": false
             }
-          ],
-          "image": "images/q_50_2062.png"
+          ]
         },
         {
           "id": "q_50_2063",
@@ -39760,7 +39953,8 @@ const QUESTIONS_DATA = {
               "text": "130 км/год.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_50_2063.png"
         },
         {
           "id": "q_50_2064",
@@ -39782,7 +39976,8 @@ const QUESTIONS_DATA = {
               "text": "130 км/год.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_50_2064.png"
         },
         {
           "id": "q_50_2065",
@@ -39866,7 +40061,8 @@ const QUESTIONS_DATA = {
               "text": "130 км/год.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_50_2068.png"
         },
         {
           "id": "q_50_2069",
@@ -39888,8 +40084,7 @@ const QUESTIONS_DATA = {
               "text": "80 км/год.",
               "correct": true
             }
-          ],
-          "image": "images/q_50_2069.png"
+          ]
         },
         {
           "id": "q_50_2070",
@@ -40269,8 +40464,7 @@ const QUESTIONS_DATA = {
               "text": "Три рази.",
               "correct": false
             }
-          ],
-          "image": "images/q_50_2091.png"
+          ]
         },
         {
           "id": "q_50_2092",
@@ -42481,7 +42675,8 @@ const QUESTIONS_DATA = {
               "text": "Знаками 2 і 3.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_52_2207.png"
         },
         {
           "id": "q_52_2208",
@@ -43019,8 +43214,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_53_2235.png"
+          ]
         },
         {
           "id": "q_53_2236",
@@ -43046,7 +43240,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 2 і 3.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_53_2236.png"
         },
         {
           "id": "q_53_2237",
@@ -43068,7 +43263,8 @@ const QUESTIONS_DATA = {
               "text": "Габаритні ліхтарі або задній протитуманний ліхтар.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_53_2237.png"
         },
         {
           "id": "q_53_2238",
@@ -43142,8 +43338,7 @@ const QUESTIONS_DATA = {
               "text": "50 км/год.",
               "correct": false
             }
-          ],
-          "image": "images/q_53_2240.png"
+          ]
         },
         {
           "id": "q_53_2241",
@@ -43179,8 +43374,7 @@ const QUESTIONS_DATA = {
               "text": "Заборонено.",
               "correct": true
             }
-          ],
-          "image": "images/q_53_2242.png"
+          ]
         },
         {
           "id": "q_53_2243",
@@ -43194,8 +43388,7 @@ const QUESTIONS_DATA = {
               "text": "Дозволено.",
               "correct": true
             }
-          ],
-          "image": "images/q_53_2243.png"
+          ]
         },
         {
           "id": "q_53_2244",
@@ -43213,8 +43406,7 @@ const QUESTIONS_DATA = {
               "text": "Тільки водій трактора.",
               "correct": false
             }
-          ],
-          "image": "images/q_53_2244.png"
+          ]
         },
         {
           "id": "q_53_2245",
@@ -43444,7 +43636,8 @@ const QUESTIONS_DATA = {
               "text": "Состав транспортних засобів з тягачем категорії В і причепом, повна маса якого перевищує 750 кілограмів.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_54_2256.png"
         },
         {
           "id": "q_54_2257",
@@ -43913,7 +44106,8 @@ const QUESTIONS_DATA = {
               "text": "На світлофорах 1, 2, 3 і 4.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_57_2281.png"
         },
         {
           "id": "q_57_2282",

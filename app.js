@@ -376,6 +376,13 @@ function renderStudyCard() {
   const q = state.currentQuestions[state.currentIndex];
   if (!q) return;
 
+  const wrapper = document.querySelector('.flip-card-wrapper');
+  if (wrapper) {
+    wrapper.classList.remove('question-slide-in');
+    void wrapper.offsetWidth;
+    wrapper.classList.add('question-slide-in');
+  }
+
   const flipCard = document.getElementById('flip-card');
   if (flipCard) flipCard.classList.remove('flipped');
 
@@ -478,6 +485,13 @@ function goToTest() {
 function renderQuizQuestion() {
   const q = state.currentQuestions[state.currentIndex];
   if (!q) return;
+
+  const card = document.querySelector('#quiz-mode .question-card');
+  if (card) {
+    card.classList.remove('question-slide-in');
+    void card.offsetWidth;
+    card.classList.add('question-slide-in');
+  }
 
   state.quizAnswered = false;
   setText('quiz-question-text', q.question);
@@ -691,9 +705,9 @@ function renderTestQuestion() {
 
   const card = document.getElementById('question-card');
   if (card) {
-    card.classList.remove('animate-in');
+    card.classList.remove('question-slide-in');
     void card.offsetWidth;
-    card.classList.add('animate-in');
+    card.classList.add('question-slide-in');
   }
 
   const opts = document.getElementById('test-options');
@@ -794,6 +808,15 @@ function finishTest() {
   // Show results screen
   document.getElementById('test-screen').classList.add('hidden');
   document.getElementById('results-screen').classList.remove('hidden');
+
+  // Stagger result stats cards
+  const statsCards = document.querySelectorAll('.result-stat');
+  statsCards.forEach((card, i) => {
+    card.classList.remove('animate-in');
+    card.style.animationDelay = `${i * 0.1}s`;
+    void card.offsetWidth;
+    card.classList.add('animate-in');
+  });
 
   setText('result-icon', passed ? '🏆' : '📚');
   const scoreEl = document.getElementById('result-score');
