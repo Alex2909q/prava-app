@@ -2,6 +2,13 @@
 //  app.js — Головна логіка ПДР Тест
 // ============================================================
 
+// Clean questions data (filter out empty/header questions)
+if (typeof QUESTIONS_DATA !== 'undefined' && QUESTIONS_DATA.blocks) {
+  QUESTIONS_DATA.blocks.forEach(block => {
+    block.questions = block.questions.filter(q => q.question && q.answers && q.answers.length > 0);
+  });
+}
+
 // ─── State ───────────────────────────────────────────────────
 const state = {
   currentBlock: null,

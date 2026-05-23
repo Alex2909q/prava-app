@@ -30,11 +30,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Трамвайна колія.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Удосконалене покриття.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Смуга руху.",
@@ -49,7 +49,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "По тротуару.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "По трамвайній колії.",
@@ -57,7 +57,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "По проїзній частині.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Відповіді 2 та 3.",
@@ -87,16 +87,22 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Нерейкових транспортних засобів.",
-              "correct": false
-            },
-            {
-              "text": "Рейкових транспортних засобів.",
               "correct": true
             },
             {
-              "text": "Нерейкових та рейкових транспортних засобів. 6.Що означає вимога дати дорогу?",
+              "text": "Рейкових транспортних засобів.",
               "correct": false
             },
+            {
+              "text": "Нерейкових та рейкових транспортних засобів.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "q_01_006_new",
+          "question": "Що означає вимога дати дорогу?",
+          "answers": [
             {
               "text": "Вимога до учасника дорожнього руху не продовжувати або не відновлювати рух, якщо це може примусити інших учасників дорожнього руху, які мають перевагу, змінити напрямок руху або швидкість.",
               "correct": false
@@ -107,7 +113,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Відповідь 1 і 2.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -117,11 +123,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Розділювальна смуга.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Смуга руху.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Трамвайна колія.",
@@ -136,11 +142,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Регулювальник, пішоходи, водії, пасажири, велосипедисти, а також особи, які рухаються в кріслі колісному.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Пішоходи, водії, пасажири, погоничі тварин, велосипедисти, а також особи, які рухаються в кріслі колісному.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Пішоходи, водії, пасажири, погоничі тварин, велосипедисти та регулювальник.",
@@ -154,7 +160,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Пішохід.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Пасажир.",
@@ -162,7 +168,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Регулювальник.",
-              "correct": true
+              "correct": false
             }
           ]
         },
@@ -172,7 +178,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Пасажир.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Пішохід.",
@@ -180,7 +186,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Особа, яка рухається в кріслі колісному.",
-              "correct": true
+              "correct": false
             }
           ],
           "image": "images/q_01_009.png"
@@ -191,7 +197,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Організована група людей, які рухаються по тротуару в одному напрямку.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Організована група людей, які рухаються узбіччям в одному напрямку.",
@@ -199,7 +205,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Організована група людей, які рухаються по проїзній частині в одному напрямку.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -224,11 +230,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Регульованим.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Нерегульованим.",
-              "correct": false
+              "correct": true
             }
           ],
           "image": "images/q_01_012.png"
@@ -239,7 +245,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Пішохідна доріжка.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Велосипедна доріжка.",
@@ -247,7 +253,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Пішохідна смуга.",
-              "correct": true
+              "correct": false
             }
           ],
           "image": "images/q_01_013.png"
@@ -272,11 +278,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Так, призначена.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Ні, не призначена.",
-              "correct": true
+              "correct": false
             }
           ]
         },
@@ -330,11 +336,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Так, може.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Ні, не може.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -344,11 +350,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Так, вважається.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Ні, не вважається.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -415,7 +421,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Обмежена оглядовість менше 300 м.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Видимість дороги в напрямку руху менше 300 метрів, обмежена поворотом дороги.",
@@ -423,7 +429,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Видимість дороги в напрямку руху менше 300 м у сутінках, в умовах туману, дощу, снігопаду тощо.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Небезпечний поворот, небезпечний підйом, небезпечний спуск.",
@@ -457,7 +463,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Велосипедна доріжка.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Велосипедна смуга.",
@@ -465,7 +471,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Велосипедний переїзд.",
-              "correct": true
+              "correct": false
             }
           ],
           "image": "images/q_01_026.png"
@@ -494,11 +500,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Велосипедна доріжка.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Велосипедна смуга.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Велосипедний переїзд.",
@@ -589,11 +595,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Так, вважається.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Ні, не вважається.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -607,11 +613,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Заборонено.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Заборонено, крім дітей до 7 років на дитячих велосипедах під наглядом дорослих.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -621,7 +627,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Мінімальна відстань, на якій з місця водія можна побачити «стоп-лінію».",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Максимальна відстань вправо від напрямку руху, на якій можна розпізнати транспортні засоби, що наближаються до перехрестя по головній дорозі.",
@@ -629,7 +635,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Максимальна відстань, на якій з місця водія можна чітко розпізнати межі елементів дороги та розміщення учасників руху, що дає змогу водієві орієнтуватися під час керування транспортним засобом.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -639,7 +645,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "На малюнку 1.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "На малюнку 2.",
@@ -647,7 +653,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "На обох малюнках.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -657,11 +663,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Рейкових транспортних засобів.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Нерейкових транспортних засобів.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Відповіді 1 і 2.",
@@ -689,11 +695,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Так, вважається.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Ні, не вважається.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -703,11 +709,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Видимість дороги в напрямку руху менше 300 м в умовах недостатньої видимості, яка обмежена геометричними параметрами дороги.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Видимість дороги в напрямку руху, яка обмежена геометричними параметрами дороги, придорожніми інженерними спорудами, насадженнями та іншими об’єктами, а також транспортними засобами.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Оглядовість дороги, обмежена умовами туману, дощу, снігопаду тощо.",
@@ -793,7 +799,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Трамваї, тролейбуси, автобуси, таксі.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Транспортні засоби з кількістю місць для сидіння не менш ніж сімнадцять з місцем водія включно, що рухаються за встановленими маршрутами та мають визначені місця на дорозі для посадки (висадки) пасажирів.",
@@ -801,7 +807,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Автобуси, мікроавтобуси, тролейбуси, трамваї і таксі, що рухаються за встановленими маршрутами та мають визначені місця на дорозі для посадки (висадки) пасажирів.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -851,7 +857,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Тільки з лівого боку.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Тільки з правого боку.",
@@ -859,7 +865,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "З будь-якого боку по суміжній смузі з дотриманням безпечного інтервалу.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -869,11 +875,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Місце перехрещення, прилягання або розгалуження доріг на одному рівні.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Територія, що прилягає до краю проїзної частини та не призначена для наскрізного проїзду, а лише для в’їзду до дворів, на стоянки, автозаправні станції, будівельні майданчики тощо або виїзду з них.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Місце для в’їзду до дворів, на стоянки, автозаправні станції, будівельні майданчики тощо або виїзду з них.",
@@ -891,7 +897,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Для зупинки та стоянки транспортних засобів.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Для руху велосипедистів за умови відсутності велосипедної доріжки.",
@@ -899,7 +905,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Для розділення суміжних проїзних частин та руху пішоходів за наявності на ній тротуару.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -931,11 +937,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Так, призначена.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Ні, не призначена.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -974,11 +980,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Водіїв.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Пішоходів.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Велосипедистів.",
@@ -1051,7 +1057,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Естакада.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Міст.",
@@ -1059,7 +1065,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Шляхопровід.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -1106,11 +1112,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Так, призначено.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Ні, не призначено, крім випадків, передбачених Правилами дорожнього руху.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -1169,11 +1175,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Так, призначений.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Ні, не призначений.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -1183,11 +1189,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Дорожньо-транспортна пригода.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Вимушена зупинка.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Стоянка.",
@@ -1202,11 +1208,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Регульованим перехрестям.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Залізничним переїздом.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Шляхопроводом.",
@@ -1220,11 +1226,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Автомагістраллю.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Автомобільною дорогою, вулицею (дорогою).",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Проїзною частиною.",
@@ -1257,11 +1263,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Габаритні ліхтарі.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Денні ходові вогні.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Ближнє світло фар.",
@@ -1280,7 +1286,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Особи, які рухаються на велосипедах.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Особи, які везуть візок.",
@@ -1288,7 +1294,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Відповіді 1 і 2.",
-              "correct": true
+              "correct": false
             }
           ]
         },
@@ -1298,11 +1304,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Організована група двох транспортних засобів, що разом рухаються в одному напрямку безпосередньо один за одним з постійно увімкненим ближнім світлом фар.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Організована група з трьох і більше транспортних засобів, що разом рухаються в одному напрямку безпосередньо один за одним з постійно увімкненим ближнім світлом фар.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Організована група двох транспортних засобів, що разом рухаються в одному напрямку безпосередньо один за одним з постійно увімкненою аварійною сигналізацією.",
@@ -1320,7 +1326,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Дорожні роботи.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Дорожні умови.",
@@ -1328,7 +1334,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Дорожня обстановка.",
-              "correct": false
+              "correct": true
             }
           ],
           "image": "images/q_01_075.png"
@@ -1357,7 +1363,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Легкових автомобілів.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Вантажних автомобілів.",
@@ -1365,7 +1371,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Сільськогосподарської техніки.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Відповідь 2 і 3.",
@@ -1379,11 +1385,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Мінімально допустима швидкість руху, за якою водій контролює дорожню обстановку та пам’ятає про небезпеку на дорозі.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Швидкість, за якої водій має змогу безпечно керувати транспортним засобом та контролювати його рух у конкретних дорожніх умовах.",
-              "correct": false
+              "correct": true
             }
           ]
         }
@@ -8002,15 +8008,19 @@ const QUESTIONS_DATA = {
         },
         {
           "id": "q_09_423",
-          "question": "У якому випадку дозволено виконати розворот під час руху тунелем? 1\t1) Якщо поруч немає транспортних засобів.",
+          "question": "У якому випадку дозволено виконати розворот під час руху тунелем?",
           "answers": [
             {
+              "text": "Якщо поруч немає транспортних засобів.",
+              "correct": false
+            },
+            {
               "text": "Якщо тунель добре освітлений, а його ширина дозволяє розвернутись швидко та безпечно.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Розворот у тунелі заборонений.",
-              "correct": false
+              "correct": true
             }
           ],
           "image": "images/q_09_423.png"
@@ -8075,10 +8085,14 @@ const QUESTIONS_DATA = {
         },
         {
           "id": "q_09_428",
-          "question": "Ви рухаєтесь на спуск з гірської дороги. З метою економії палива можна під час руху по цій дорозі вимкнути передачу ?",
+          "question": "Ви рухаєтесь на спуск з гірської дороги. З метою економії палива можна під час руху по цій дорозі вимкнути передачу?",
           "answers": [
             {
-              "text": "Так. 2\t2) Ні.",
+              "text": "Так.",
+              "correct": false
+            },
+            {
+              "text": "Ні.",
               "correct": true
             }
           ]
@@ -12913,11 +12927,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Продовжити рух у наміченому напрямку, тільки коли буде увімкнено зелений сигнал світлофора.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Увімкнути лівий покажчик повороту, продовжити рух у напрямку, вказаному стрілкою, увімкненою в додатковій секції.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Перестроїтися в правий ряд.",
@@ -12932,7 +12946,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Проїхати перехрестя першим.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Дати дорогу тільки зустрічному трамваю.",
@@ -12940,7 +12954,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Дати дорогу обом трамваям.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Дати дорогу тільки попутному трамваю.",
@@ -12954,11 +12968,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Трамвай.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Автомобіль.",
-              "correct": true
+              "correct": false
             }
           ]
         },
@@ -12982,11 +12996,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Повинен продовжувати рух у наміченому напрямку, незважаючи на ввімкнений заборонний сигнал світлофора.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Повинен зупинитися перед дорожньою розміткою «Стоп-лінія» і продовжити рух, коли ввімкнеться зелений сигнал світлофора.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -12996,11 +13010,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Виїхати в наміченому напрямку незалежно від сигналу світлофора на шляху свого руху.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Зупинитися перед дорожньою розміткою «Стоп-лінія» і продовжити рух, коли ввімкнеться зелений сигнал світлофора.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13010,11 +13024,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Водій автомобіля.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Водій трамвая.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13024,11 +13038,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Червоний автомобіль.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Синій автомобіль.",
-              "correct": true
+              "correct": false
             }
           ],
           "image": "images/q_14_682.png"
@@ -13039,11 +13053,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Дасть дорогу трамваю.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Проїде першим, маючи перевагу.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13071,7 +13085,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Заборонено.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Дозволено, давши дорогу пішоходам.",
@@ -13079,7 +13093,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Дозволено, давши дорогу транспортним засобам і пішоходам, що рухаються з інших напрямків.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13089,11 +13103,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "На обох.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "На першому.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "На другому.",
@@ -13127,11 +13141,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Повинен.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Не повинен.",
-              "correct": true
+              "correct": false
             }
           ],
           "image": "images/q_14_688.png"
@@ -13142,11 +13156,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Білий, фіолетовий.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Фіолетовий, білий.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13156,7 +13170,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Дати дорогу тільки сірому автомобілю.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Дати дорогу тільки зеленому автомобілю.",
@@ -13164,7 +13178,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Дати дорогу сірому і зеленому автомобілям.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13192,7 +13206,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Повинен.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Не повинен, оскільки велосипедист рухається по велосипедній доріжці.",
@@ -13200,7 +13214,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Не повинен, оскільки рухається на сигнал світлофора, що дозволяє рух.",
-              "correct": true
+              "correct": false
             }
           ]
         },
@@ -13214,11 +13228,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Не повинен.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Повинен завжди.",
-              "correct": false
+              "correct": true
             }
           ],
           "image": "images/q_14_693.png"
@@ -13229,11 +13243,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Повинен дати дорогу, повертаючи в будь-якому напрямку.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Не повинен давати дорогу.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Повинен дати дорогу, тільки повертаючи праворуч.",
@@ -13251,11 +13265,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Виїжджати на перехрестя заборонено.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Виїжджати на перехрестя дозволено, оскільки зелений миготливий сигнал світлофора не забороняє рух.",
-              "correct": true
+              "correct": false
             }
           ],
           "image": "images/q_14_695.png"
@@ -13270,11 +13284,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Дати дорогу тільки пішоходу, що завершує рух через проїзну частину.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Дати дорогу фіолетовому автомобілю і пішоходу, що завершують рух через перехрестя.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13288,11 +13302,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Розпочати рух, безпечно об'їхавши пішохода.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Дати дорогу пішоходу, щоб він мав можливість закінчити перехід.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13364,11 +13378,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Якщо наближається транспортний засіб з оранжевим проблисковим маячком.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Якщо за перехрестям утворився затор, який змусить водія зупинитися на перехресті, і це створить перешкоду для руху інших транспортних засобів і пішоходів.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Відповіді 2 і 3.",
@@ -13394,11 +13408,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Дати дорогу тільки пішоходам, що завершують рух через перехрестя.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Дати дорогу всім транспортним засобам і пішоходам, що завершують рух через перехрестя.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13426,7 +13440,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Перехрестя, де черговість проїзду регулюється тільки сигналами світлофора.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Перехрестя, де черговість проїзду регулюється тільки сигналами регулювальника.",
@@ -13438,7 +13452,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Перехрестя, де черговість проїзду регулюється сигналами світлофора або регулювальника.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13473,16 +13487,25 @@ const QUESTIONS_DATA = {
         {
           "id": "q_14_708",
           "question": "Чи дозволено водію чорного автомобіля повернути праворуч у даному випадку?",
-          "answers": []
+          "answers": [
+            {
+              "text": "Дозволено.",
+              "correct": true
+            },
+            {
+              "text": "Заборонено.",
+              "correct": false
+            }
+          ]
         },
         {
           "id": "q_14_709",
-          "question": "Дозволено.",
+          "question": "",
           "answers": []
         },
         {
           "id": "q_14_710",
-          "question": "Заборонено.». 16.2. ПРОЇЗД ПЕРЕХРЕСТЬ (НЕРЕГУЛЬОВАНІ ПЕРЕХРЕСТЯ)",
+          "question": "",
           "answers": []
         },
         {
@@ -13491,11 +13514,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Дати дорогу тільки червоному і сірому автомобілям.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Дати дорогу всім транспортним засобам.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Дати дорогу тільки сірому автомобілю.",
@@ -13510,11 +13533,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Першим.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Давши дорогу синьому автомобілю.",
-              "correct": true
+              "correct": false
             }
           ]
         },
@@ -13608,11 +13631,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Проїхати перехрестя першим.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Дати дорогу сірому автомобілю.",
-              "correct": true
+              "correct": false
             }
           ]
         },
@@ -13622,11 +13645,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Проїхати першим.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Дати дорогу фіолетовому автомобілю.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13650,11 +13673,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Синій автомобіль, а потім Ви.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Ви, а потім синій автомобіль.",
-              "correct": true
+              "correct": false
             }
           ]
         },
@@ -13710,11 +13733,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Проїхати перехрестя першим.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Дати дорогу тільки білому автомобілю.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Дати дорогу білому і жовтому автомобілям.",
@@ -13733,11 +13756,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Проїхати перехрестя першим.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Проїхати перехрестя після трамвая і синього автомобіля.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13783,11 +13806,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Останнім.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Після жовтого і фіолетового автомобілів, трамвая.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Першим.",
@@ -13801,11 +13824,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Після трамвая.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Після трамвая, білого і чорного автомобілів.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Першим.",
@@ -13847,11 +13870,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Першим.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Давши дорогу велосипедистові.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13875,11 +13898,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Виїхати на перехрестя, де організовано круговий рух, водій фіолетового автомобіля повинен дати Вам дорогу.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Надати перевагу у русі фіолетову автомобілю, який вже рухається по колу і після цього виїхати на перехрестя.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13922,11 +13945,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Проїхати перехрестя другим, давши дорогу тільки мотоциклу.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Проїхати перехрестя останнім – після мотоцикла й автомобіля.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13940,11 +13963,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Проїхати перехрестя другим, давши дорогу тільки білому автомобілю.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Проїхати перехрестя останнім – після трамвая і білого автомобіля.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13954,11 +13977,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Проїхати перехрестя першим.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Дати дорогу тільки трамваю.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Проїхати перехрестя після трамвая і сірого автомобіля.",
@@ -13976,11 +13999,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Другим.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Третім.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -13994,11 +14017,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Ваш, білий, синій автомобілі.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Білий, ваш, синій автомобілі.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14012,11 +14035,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Після зеленого автомобіля.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Після сірого автомобіля.",
-              "correct": true
+              "correct": false
             }
           ]
         },
@@ -14045,11 +14068,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Проїхати перехрестя першим, оскільки він їде прямо.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Вважати, що він перебуває на другорядній дорозі.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14091,11 +14114,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Повинен проїхати першим, оскільки має перевагу в русі, тому що перебуває на перехресті з круговим рухом.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Повинен дати Вам дорогу.",
-              "correct": true
+              "correct": false
             }
           ]
         },
@@ -14105,11 +14128,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Синій, ваш автомобілі.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Ваш, синій автомобілі.",
-              "correct": true
+              "correct": false
             }
           ]
         },
@@ -14119,11 +14142,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Ваш, синій, білий автомобілі.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Синій, білий, ваш автомобілі.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Білий, синій, ваш автомобілі.",
@@ -14167,11 +14190,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Проїхати, давши дорогу синьому автомобілю і велосипедистові.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Проїхати, давши дорогу тільки велосипедистові.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14185,7 +14208,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Другим – після трамвая.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Третім, давши дорогу тільки трамваю і жовтому автомобілю.",
@@ -14193,7 +14216,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Останнім – після трамвая, білого і жовтого автомобілів.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14221,7 +14244,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Першим.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Другим – після проїзду трамвая.",
@@ -14229,7 +14252,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Останнім – після трамвая і велосипедиста.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14261,11 +14284,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Жовтий, ваш автомобіль, трамвай, синій автомобілі.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Трамвай одночасно з жовтим, ваш, синій автомобілі.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14333,7 +14356,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Синій автомобіль.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Чорний автомобіль.",
@@ -14341,7 +14364,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Білий автомобіль.",
-              "correct": false
+              "correct": true
             }
           ],
           "image": "images/q_14_762.png"
@@ -14352,11 +14375,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Червоний автомобіль.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Білий автомобіль.",
-              "correct": true
+              "correct": false
             }
           ],
           "image": "images/q_14_763.png"
@@ -14367,11 +14390,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Дати дорогу фіолетовому автомобілю.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Проїхати першим, не даючи дорогу фіолетовому автомобілю.",
-              "correct": true
+              "correct": false
             }
           ]
         },
@@ -14441,11 +14464,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Дати дорогу трамваю.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Проїхати першим, оскільки маєте перевагу в русі.",
-              "correct": true
+              "correct": false
             }
           ]
         },
@@ -14504,11 +14527,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Жовтий автомобіль.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Сірий автомобіль.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Зелений автомобіль.",
@@ -14540,11 +14563,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Першим.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Другим.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Третім.",
@@ -14562,11 +14585,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "На другому.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "На третьому.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "На всіх малюнках.",
@@ -14603,11 +14626,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Не повинен, тому що велосипедист рухається по велосипедній доріжці.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Повинен дати дорогу.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14617,11 +14640,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Не повинен.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Повинен завжди.",
-              "correct": false
+              "correct": true
             }
           ],
           "image": "images/q_14_778.png"
@@ -14632,11 +14655,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Обидва водії.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Тільки водій білого автомобіля.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Тільки водій синього автомобіля.",
@@ -14650,11 +14673,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Не повинен.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Повинен завжди.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14664,7 +14687,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "На місці А.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "На місці Б.",
@@ -14672,7 +14695,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "На місці А чи Б.",
-              "correct": true
+              "correct": false
             }
           ],
           "image": "images/q_14_781.png"
@@ -14683,11 +14706,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Може, тому що перебуває на головній дорозі.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Не може, тому що, зупинившись, створить перешкоду для руху іншим транспортним засобам.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Може, тому що рухається прямо.",
@@ -14701,11 +14724,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Трамвай, автомобіль.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Автомобіль, трамвай.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14733,7 +14756,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Синій автомобіль, зелений автомобіль, трамвай.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Трамвай, синій автомобіль, зелений автомобіль.",
@@ -14745,7 +14768,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Синій автомобіль, трамвай, зелений автомобіль.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14781,11 +14804,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Дати дорогу тільки зустрічному автомобілю.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Проїхати перехрестя першим.",
-              "correct": true
+              "correct": false
             }
           ],
           "image": "images/q_14_787.png"
@@ -14810,11 +14833,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Дати дорогу велосипедистові.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Не давати дорогу велосипедистові.",
-              "correct": true
+              "correct": false
             }
           ],
           "image": "images/q_14_789.png"
@@ -14829,11 +14852,11 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Дати дорогу тільки червоному автомобілю.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Проїхати перехрестя першим.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14861,11 +14884,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Дати дорогу трамваю.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Проїхати перехрестя першим.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14875,11 +14898,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Дати дорогу тільки транспортному засобу з увімкненим проблисковим маячком синього кольору.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Дати дорогу транспортному засобу з увімкненим проблисковим маячком синього кольору та сірому автомобілю.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14889,7 +14912,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Дати дорогу обом автомобілям.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Дати дорогу тільки зеленому автомобілю.",
@@ -14897,7 +14920,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Проїхати перехрестя першим.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14907,11 +14930,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Сірий, зелений, червоний автомобілі.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Червоний, сірий, зелений автомобілі.",
-              "correct": false
+              "correct": true
             },
             {
               "text": "Сірий, червоний, зелений автомобілі.",
@@ -14925,7 +14948,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Проїхати перехрестя першим.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Проїхати перехрестя останнім, давши дорогу обом автомобілям.",
@@ -14933,7 +14956,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Проїхати перехрестя другим, давши дорогу тільки чорному автомобілю.».",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14943,11 +14966,11 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Дати дорогу автомобілю з увімкненими проблисковими маячками.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Дати дорогу обом транспортним засобам.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -14957,7 +14980,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Зелений, синій, червоний автомобілі.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Червоний, зелений, синій автомобілі.",
@@ -14965,7 +14988,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Синій, зелений, червоний автомобілі.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -35060,8 +35083,21 @@ const QUESTIONS_DATA = {
         },
         {
           "id": "q_43_1826",
-          "question": "Наведений індикатор червоного кольору інформує про: Відчинені двері автомобіля. Блокування дверей автомобіля. Відчинені двері багажника.",
-          "answers": [],
+          "question": "Наведений індикатор червоного кольору інформує про:",
+          "answers": [
+            {
+              "text": "Відчинені двері автомобіля.",
+              "correct": true
+            },
+            {
+              "text": "Блокування дверей автомобіля.",
+              "correct": false
+            },
+            {
+              "text": "Відчинені двері багажника.",
+              "correct": false
+            }
+          ],
           "image": "images/q_43_1826.png"
         },
         {
