@@ -1469,7 +1469,8 @@ const QUESTIONS_DATA = {
               "text": "Відповіді 1 і 2.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_02_082.png"
         },
         {
           "id": "q_02_083",
@@ -4588,7 +4589,8 @@ const QUESTIONS_DATA = {
               "text": "Виконати вимогу поліцейського, зупинивши свій транспортний засіб тільки з лівого боку дороги.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_07_244.png"
         },
         {
           "id": "q_07_245",
@@ -4703,7 +4705,8 @@ const QUESTIONS_DATA = {
               "text": "Сигналами регулювальника.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_07_250.png"
         },
         {
           "id": "q_07_251",
@@ -10971,7 +10974,8 @@ const QUESTIONS_DATA = {
               "text": "Має право при дотриманні умов, зазначених у відповідях 2 і 3.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_13_576.png"
         },
         {
           "id": "q_13_577",
@@ -15403,7 +15407,8 @@ const QUESTIONS_DATA = {
               "text": "Ваш автомобіль.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_14_814.png"
         },
         {
           "id": "q_14_815",
@@ -21012,7 +21017,8 @@ const QUESTIONS_DATA = {
               "text": "Знак 4.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1095.png"
         },
         {
           "id": "q_31_1096",
@@ -21063,7 +21069,8 @@ const QUESTIONS_DATA = {
               "text": "Стоянку транспортних засобів.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_31_1098.png"
         },
         {
           "id": "q_31_1099",
@@ -26466,7 +26473,8 @@ const QUESTIONS_DATA = {
               "text": "Водій зупинився перед знаком «Проїзд без зупинки заборонено» і не дав нікому дорогу.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_31_1352.png"
         },
         {
           "id": "q_31_1353",
@@ -29012,7 +29020,8 @@ const QUESTIONS_DATA = {
               "text": "Усе вищенаведене.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_33_1490.png"
         },
         {
           "id": "q_33_1491",
@@ -29604,7 +29613,8 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_33_1525.png"
         },
         {
           "id": "q_33_1526",
@@ -29700,7 +29710,8 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_33_1531.png"
         },
         {
           "id": "q_33_1532",
@@ -30920,7 +30931,8 @@ const QUESTIONS_DATA = {
               "text": "Ні.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_33_1600.png"
         },
         {
           "id": "q_33_1601",
@@ -35387,7 +35399,8 @@ const QUESTIONS_DATA = {
               "text": "Аварійна світлова сигналізація.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_43_1831.png"
         },
         {
           "id": "q_43_1832",
@@ -35572,7 +35585,8 @@ const QUESTIONS_DATA = {
               "text": "4.",
               "correct": false
             }
-          ]
+          ],
+          "image": "images/q_43_1841.png"
         },
         {
           "id": "q_43_1842",
@@ -35594,7 +35608,8 @@ const QUESTIONS_DATA = {
               "text": "4.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_43_1842.png"
         },
         {
           "id": "q_43_1843",
@@ -40003,7 +40018,8 @@ const QUESTIONS_DATA = {
               "text": "110 км/год.",
               "correct": true
             }
-          ]
+          ],
+          "image": "images/q_50_2065.png"
         },
         {
           "id": "q_50_2066",

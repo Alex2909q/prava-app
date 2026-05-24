@@ -238,17 +238,36 @@ for (let pageNum = 1; pageNum <= doc.numPages; pageNum++) {
             }
         } else if (line.type === 'image') {
             if (currentQuestion) {
-                const imgName = line.name;
+                                const imgName = line.name;
                 
                 // Get the image object with retry loop for lazy resolution
                 let imgObj = null;
+                const resolveNames = [imgName];
+                if (imgName.startsWith('g_d0_') || imgName.includes('img_')) {
+                    const cleanName = imgName.replace(/^g_d\d+_/, '');
+                    if (cleanName !== imgName) {
+                        resolveNames.push(cleanName);
+                    }
+                }
+                
                 for (let attempt = 0; attempt < 30; attempt++) {
                     try {
-                        imgObj = await page.objs.get(imgName);
+                        for (const name of resolveNames) {
+                            try {
+                                imgObj = await page.objs.get(name);
+                                if (imgObj && imgObj.data) break;
+                            } catch (err) {
+                                try {
+                                    imgObj = await page.commonObjs.get(name);
+                                    if (imgObj && imgObj.data) break;
+                                } catch (err2) {
+                                    // ignore both
+                                }
+                            }
+                        }
                         if (imgObj && imgObj.data) break;
                     } catch (e) {
-                        // Wait and retry for any error (typically transient resolution errors)
-                        await new Promise(r => setTimeout(r, 100));
+                        // Wait and retry
                     }
                     await new Promise(r => setTimeout(r, 100));
                 }
