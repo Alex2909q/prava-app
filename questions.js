@@ -1,6 +1,3 @@
-// questions.js — База питань ПДР України
-// Автоматично згенеровано з POLOTNO-NAKAZ_04_09_2025.pdf
-
 const QUESTIONS_DATA = {
   "version": "2025-09",
   "blocks": [
@@ -376,7 +373,7 @@ const QUESTIONS_DATA = {
           "answers": [
             {
               "text": "Обгін.",
-              "correct": true
+              "correct": false
             },
             {
               "text": "Об’їзд.",
@@ -384,7 +381,7 @@ const QUESTIONS_DATA = {
             },
             {
               "text": "Випередження.",
-              "correct": false
+              "correct": true
             }
           ],
           "image": "images/q_01_022.png"
