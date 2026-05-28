@@ -139,6 +139,25 @@ function getPdrSectionUrl(block) {
   return 'https://vodiy.ua/pdr/';
 }
 
+// Returns {url, sectionNum, sectionTitle} for a given question
+function getPdrInfo(q) {
+  const block = getBlockForQuestion(q);
+  if (!block) return { url: 'https://vodiy.ua/pdr/', sectionNum: null, sectionTitle: 'ПДР' };
+  const numMatch = block.title.match(/^(\d+)\.?\s*(.+)/);
+  if (numMatch) {
+    const sectionNum = numMatch[1];
+    // Capitalize first letter, rest lower
+    const rawTitle = numMatch[2].trim();
+    const sectionTitle = rawTitle.charAt(0) + rawTitle.slice(1).toLowerCase();
+    return {
+      url: `https://vodiy.ua/pdr/${sectionNum}/`,
+      sectionNum,
+      sectionTitle
+    };
+  }
+  return { url: 'https://vodiy.ua/pdr/', sectionNum: null, sectionTitle: 'ПДР' };
+}
+
 function toggleStarQuestion(qId, btnId) {
   const starred = LS.toggleStarred(qId);
   const btn = document.getElementById(btnId);
@@ -411,9 +430,12 @@ function renderStudyCard() {
   // Update PDR Link
   const pdrBtn = document.getElementById('card-pdr-btn');
   if (pdrBtn) {
-    const block = getBlockForQuestion(q);
-    const pdrUrl = getPdrSectionUrl(block);
-    pdrBtn.href = pdrUrl;
+    const { url, sectionNum, sectionTitle } = getPdrInfo(q);
+    pdrBtn.href = url;
+    pdrBtn.title = `Читати ПДР: Розділ ${sectionNum} — ${sectionTitle}`;
+    pdrBtn.innerHTML = sectionNum
+      ? `📖 Розділ ${sectionNum}`
+      : '📖 Читати ПДР';
   }
 
   const pct = Math.round(((state.currentIndex + 1) / state.currentQuestions.length) * 100);
@@ -534,9 +556,12 @@ function renderQuizQuestion() {
   // Update PDR Link
   const pdrBtn = document.getElementById('quiz-pdr-btn');
   if (pdrBtn) {
-    const block = getBlockForQuestion(q);
-    const pdrUrl = getPdrSectionUrl(block);
-    pdrBtn.href = pdrUrl;
+    const { url, sectionNum, sectionTitle } = getPdrInfo(q);
+    pdrBtn.href = url;
+    pdrBtn.title = `Читати ПДР: Розділ ${sectionNum} — ${sectionTitle}`;
+    pdrBtn.innerHTML = sectionNum
+      ? `📖 Розділ ${sectionNum}`
+      : '📖 Читати ПДР';
   }
 
   const nextBtn = document.getElementById('quiz-next-btn');
@@ -732,9 +757,12 @@ function renderTestQuestion() {
   // Update PDR Link
   const pdrBtn = document.getElementById('test-pdr-btn');
   if (pdrBtn) {
-    const block = getBlockForQuestion(q);
-    const pdrUrl = getPdrSectionUrl(block);
-    pdrBtn.href = pdrUrl;
+    const { url, sectionNum, sectionTitle } = getPdrInfo(q);
+    pdrBtn.href = url;
+    pdrBtn.title = `Читати ПДР: Розділ ${sectionNum} — ${sectionTitle}`;
+    pdrBtn.innerHTML = sectionNum
+      ? `📖 Розділ ${sectionNum}`
+      : '📖 Читати ПДР';
   }
 
   const card = document.getElementById('question-card');
@@ -921,7 +949,10 @@ function finishTest() {
     if (mistakesSection) mistakesSection.style.display = 'block';
     const list = document.getElementById('mistakes-list');
     if (list) {
-      list.innerHTML = mistakes.map(m => `
+      list.innerHTML = mistakes.map(m => {
+        const { url: pdrUrl, sectionNum, sectionTitle } = getPdrInfo(m.question);
+        const pdrLabel = sectionNum ? `Розділ ${sectionNum}: ${sectionTitle}` : 'Читати ПДР';
+        return `
         <div class="mistake-item">
           <div class="mistake-q">❓ ${m.question.question}</div>
           ${m.question.image ? `<div class="mistake-image-wrapper"><img src="${m.question.image}" class="mistake-image" alt="Помилка"></div>` : ''}
@@ -933,8 +964,12 @@ function finishTest() {
               ✅ Правильна відповідь: ${m.correctAnswerText}
             </div>
           </div>
+          <a href="${pdrUrl}" target="_blank" class="mistake-pdr-link" title="Читати ПДР: ${pdrLabel}">
+            📖 ${pdrLabel}
+          </a>
         </div>
-      `).join('');
+        `;
+      }).join('');
     }
   }
 
