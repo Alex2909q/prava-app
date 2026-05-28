@@ -221,6 +221,13 @@ function updateGlobalStats() {
   setText('total-tested', progressPct + '%');
   setText('best-score', best);
 
+  // Readiness Score
+  const readiness = calculateReadinessScore();
+  setText('readiness-score', readiness);
+
+  // Update navbar stats
+  updateNavbarStats();
+
   // Premium metrics
   const mistakes = LS.getMistakes();
   const mistakesCount = mistakes.length;
@@ -414,6 +421,9 @@ function renderStudyCard() {
   if (fill) fill.style.width = pct + '%';
 
   document.getElementById('prev-btn')?.toggleAttribute('disabled', state.currentIndex === 0);
+
+  // Render comments for the current question
+  renderComments(q.id);
 }
 
 function flipCard() {
@@ -423,6 +433,18 @@ function flipCard() {
 function markCard(known) {
   const q = state.currentQuestions[state.currentIndex];
   const block = state.currentBlock;
+  
+  // Award/deduct points for learning cards
+  const gp = LS.get('pdr_points', 0);
+  if (known) {
+    LS.set('pdr_points', gp + 1);
+    showPointsPopup(1, true, document.getElementById('btn-know'));
+    updateStudyStreak();
+  } else {
+    LS.set('pdr_points', Math.max(0, gp - 1));
+    showPointsPopup(-1, false, document.getElementById('btn-dont-know'));
+    updateStudyStreak();
+  }
   
   if (block.id === 'mistakes') {
     if (known) {
@@ -533,6 +555,9 @@ function renderQuizQuestion() {
     el.style.animationDelay = `${i * 0.08}s`;
     el.classList.add('animate-in');
   });
+
+  // Render comments for the current question
+  renderComments(q.id);
 }
 
 function selectQuizAnswer(btn, isCorrect) {
@@ -548,16 +573,23 @@ function selectQuizAnswer(btn, isCorrect) {
     if (el.dataset.correct === 'true') el.classList.add('show-correct');
   });
 
+  const gp = LS.get('pdr_points', 0);
   if (isCorrect) {
     btn.classList.add('correct');
     state.quizCorrect++;
     showToast('✅ Правильно!', 'success');
+    LS.set('pdr_points', gp + 2);
+    showPointsPopup(2, true, btn);
+    updateStudyStreak();
     if (block.id === 'mistakes') {
       LS.removeMistake(q.id);
     }
   } else {
     btn.classList.add('wrong');
     showToast('❌ Неправильно', 'error');
+    LS.set('pdr_points', Math.max(0, gp - 1));
+    showPointsPopup(-1, false, btn);
+    updateStudyStreak();
     LS.addMistake(q.id);
   }
 
@@ -631,6 +663,8 @@ function startTest() {
   state.testAnswers = [];
   state.timeLeft = 20 * 60;
   state.testStartTime = Date.now();
+  state.testPointsEarned = 0;
+  state.testStreak = 0;
 
   document.getElementById('start-screen').classList.add('hidden');
   document.getElementById('test-screen').classList.remove('hidden');
@@ -757,6 +791,24 @@ function selectTestAnswer(btn, isCorrect) {
     LS.addMistake(q.id);
   }
 
+  // Points & Streak calculations during test
+  const base = state.isSimulation ? 2 : 1;
+  const deduct = state.isSimulation ? 2 : 1;
+  if (isCorrect) {
+    state.testStreak++;
+    const bonus = getStreakBonus(state.testStreak, state.isSimulation);
+    const earned = base + bonus;
+    state.testPointsEarned += earned;
+    showPointsPopup(earned, true, btn);
+    if (bonus > 0) {
+      showToast(`⚡ Серія ${state.testStreak} правильних відповідей! Бонус: +${bonus} балів!`, 'success');
+    }
+  } else {
+    state.testStreak = 0;
+    state.testPointsEarned -= deduct;
+    showPointsPopup(-deduct, false, btn);
+  }
+
   if (state.isSimulation) {
     if (!isCorrect) {
       state.simMistakes++;
@@ -796,6 +848,21 @@ function finishTest() {
   } else {
     passed = score >= 90;
   }
+
+  // Points allocation and anti-fraud penalty
+  let pointsAdded = state.testPointsEarned || 0;
+  const wrongCount = total - correct;
+  
+  if (correct < wrongCount) {
+    pointsAdded = 0;
+    showToast('⚠️ Отримано 0 балів за тест: неправильних відповідей більше, ніж правильних.', 'warning');
+  } else if (pointsAdded > 0) {
+    const globalPoints = LS.get('pdr_points', 0);
+    LS.set('pdr_points', globalPoints + pointsAdded);
+    showToast(`🏆 Отримано +${pointsAdded} балів за тест!`, 'success');
+  }
+  
+  updateStudyStreak();
 
   // Save result
   const results = LS.getResults();
@@ -920,9 +987,225 @@ function launchConfetti() {
       p.rot += p.rotSpeed;
       p.vy += 0.05;
     });
+  let frame = 0;
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => {
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate((p.rot * Math.PI) / 180);
+      ctx.fillStyle = p.c;
+      ctx.fillRect(-p.r, -p.r, p.r * 2, p.r * 2);
+      ctx.restore();
+      p.x += p.vx;
+      p.y += p.vy;
+      p.rot += p.rotSpeed;
+      p.vy += 0.05;
+    });
     frame++;
     if (frame < 180) requestAnimationFrame(draw);
     else ctx.clearRect(0, 0, canvas.width, canvas.height);
   }
   draw();
 }
+
+// ─── Gamification & Community Features ────────────────────────
+const commentAuthors = [
+  { name: 'Дмитро Карпенко', badge: 'student' },
+  { name: 'Марія Козак', badge: 'student' },
+  { name: 'Олексій Шевченко', badge: 'expert', title: 'Викладач теорії' },
+  { name: 'Ірина Бойко', badge: 'student' },
+  { name: 'В.О. Артемченко', badge: 'expert', title: 'Інструктор' },
+];
+
+const studentPhrases = [
+  "Підкажіть, чому тут саме такий варіант? Був упевнений, що діє правило правої руки.",
+  "Нарешті розібрався! Дуже підступне питання через розташування знаків.",
+  "В офіційному білеті ГСЦ малюнок точно такий самий, головне запам'ятати.",
+  "Чи може хтось пояснити різницю між цим пунктом та розділом 10 ПДР?",
+  "Дякую за коментарі, допомагає зрозуміти логіку, а не просто зазубрювати!"
+];
+
+const expertPhrases = [
+  "Зверніть увагу на пункт {PDR} правил. Тут чітко зазначено пріоритет руху рейкових транспортних засобів.",
+  "Типова пастка розробників білетів. Головне — дивитися на поєднання знаку та розмітки.",
+  "Завжди пам'ятайте: регулювальник має перевагу над світлофорами та знаками пріоритету!",
+  "Якщо виникає сумнів, читайте розділ про проїзд перехресть. У даній ситуації діє загальне правило.",
+  "Для успішного складання іспиту в сервісному центрі важливо чітко розрізняти ці поняття."
+];
+
+function updateNavbarStats() {
+  const points = LS.get('pdr_points', 0);
+  const streak = LS.get('pdr_streak_days', 0);
+  
+  const ptsEl = document.getElementById('nav-points');
+  if (ptsEl) ptsEl.textContent = `🪙 ${points.toLocaleString()}`;
+  
+  const strEl = document.getElementById('nav-streak');
+  if (strEl) strEl.textContent = `⚡ ${streak} дн.`;
+}
+
+function updateStudyStreak() {
+  const todayStr = new Date().toDateString();
+  const lastStudy = localStorage.getItem('pdr_last_study_date');
+  let streak = LS.get('pdr_streak_days', 0);
+  
+  if (lastStudy) {
+    if (lastStudy !== todayStr) {
+      const lastDate = new Date(lastStudy);
+      const todayDate = new Date();
+      const diffTime = Math.abs(todayDate - lastDate);
+      const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+      
+      if (diffDays <= 1) {
+        streak++;
+      } else {
+        streak = 1;
+      }
+      localStorage.setItem('pdr_last_study_date', todayStr);
+      LS.set('pdr_streak_days', streak);
+    }
+  } else {
+    streak = 1;
+    localStorage.setItem('pdr_last_study_date', todayStr);
+    LS.set('pdr_streak_days', streak);
+  }
+  updateNavbarStats();
+}
+
+function showPointsPopup(amount, isCorrect, eventNode) {
+  if (!eventNode) return;
+  const rect = eventNode.getBoundingClientRect();
+  const pop = document.createElement('div');
+  pop.className = 'points-pop';
+  pop.textContent = (amount >= 0 ? '+' : '') + amount;
+  pop.style.left = `${rect.left + rect.width / 2}px`;
+  pop.style.top = `${window.scrollY + rect.top}px`;
+  if (!isCorrect) pop.style.color = 'var(--danger)';
+  document.body.appendChild(pop);
+  setTimeout(() => pop.remove(), 800);
+}
+
+function calculateReadinessScore() {
+  const results = LS.getResults();
+  let allAttempts = [];
+  Object.keys(results).forEach(blockId => {
+    if (blockId === 'simulation' || blockId === 'full' || !isNaN(blockId)) {
+      results[blockId].forEach(r => {
+        allAttempts.push(r);
+      });
+    }
+  });
+  
+  if (allAttempts.length < 3) return '—';
+  
+  allAttempts.sort((a, b) => b.date - a.date);
+  const latestAttempts = allAttempts.slice(0, 10);
+  const sumScores = latestAttempts.reduce((acc, r) => acc + r.score, 0);
+  const avgPct = sumScores / latestAttempts.length;
+  
+  return `${(avgPct / 10).toFixed(1)} / 10`;
+}
+
+function getStreakBonus(streak, isSim) {
+  if (streak === 5) return isSim ? 3 : 2;
+  if (streak === 7) return isSim ? 4 : 3;
+  if (streak === 10) return isSim ? 5 : 4;
+  if (streak === 15) return isSim ? 6 : 5;
+  if (streak === 18) return isSim ? 7 : 6;
+  return 0;
+}
+
+// Comments rendering
+function renderComments(qId) {
+  const listEl = document.getElementById('comments-list');
+  const countEl = document.getElementById('comments-count');
+  if (!listEl) return;
+
+  const customComments = LS.get(`comments_${qId}`, []);
+  let comments = [];
+  
+  if (qId === 'q_01_001') {
+    comments = [
+      { author: 'Василь Петрович', title: 'Викладач автошколи', badge: 'expert', text: 'Це питання часто плутають. Запам\'ятайте, що рух пішоходів по розділювальній смузі заборонений, оскільки вона служить для розділення транспортних потоків.', time: '2 дні тому' },
+      { author: 'Ольга Ковальчук', badge: 'student', text: 'Дякую за пояснення! А я думала, що якщо немає тротуару, то можна.', time: '1 день тому' }
+    ];
+  } else if (qId === 'q_01_006') {
+    comments = [
+      { author: 'Андрій М.', title: 'Інструктор з водіння', badge: 'expert', text: 'Вимога "Дати дорогу" означає не починати, не продовжувати або не відновлювати рух, якщо це змусить інших учасників руху змінити напрямок або швидкість.', time: '3 дні тому' },
+      { author: 'Дмитро', badge: 'student', text: 'У квитках ГСЦ це формулювання зустрічається декілька разів. Краще завчити напам\'ять.', time: '12 годин тому' }
+    ];
+  } else {
+    let seed = 0;
+    for (let i = 0; i < qId.length; i++) seed += qId.charCodeAt(i);
+    
+    const count = (seed % 3) + 1;
+    for (let i = 0; i < count; i++) {
+      const authorIdx = (seed + i * 7) % commentAuthors.length;
+      const author = commentAuthors[authorIdx];
+      
+      let text = '';
+      if (author.badge === 'expert') {
+        const textIdx = (seed + i * 3) % expertPhrases.length;
+        const pdrSec = (seed % 30) + 1;
+        text = expertPhrases[textIdx].replace('{PDR}', pdrSec);
+      } else {
+        const textIdx = (seed + i * 4) % studentPhrases.length;
+        text = studentPhrases[textIdx];
+      }
+      
+      const timeVal = (seed + i * 11) % 6 + 1;
+      comments.push({
+        author: author.name,
+        title: author.title || '',
+        badge: author.badge,
+        text: text,
+        time: `${timeVal} дн. тому`
+      });
+    }
+  }
+
+  const allComments = [...comments, ...customComments];
+  if (countEl) countEl.textContent = allComments.length;
+
+  listEl.innerHTML = allComments.map(c => `
+    <div class="comment-item">
+      <div class="comment-header">
+        <span class="comment-author">${c.author}</span>
+        ${c.title ? `<span style="font-size:11px;color:var(--text-muted)">(${c.title})</span>` : ''}
+        <span class="comment-badge ${c.badge}">${c.badge === 'expert' ? 'Експерт 🎓' : 'Студент'}</span>
+        <span class="comment-time">${c.time}</span>
+      </div>
+      <div class="comment-text">${c.text}</div>
+    </div>
+  `).join('');
+}
+
+function addCustomComment() {
+  const input = document.getElementById('comment-input');
+  if (!input) return;
+  const text = input.value.trim();
+  if (!text) return;
+  
+  const q = state.currentQuestions[state.currentIndex];
+  if (!q) return;
+
+  const customComments = LS.get(`comments_${q.id}`, []);
+  customComments.push({
+    author: 'Ви (Ви)',
+    badge: 'student',
+    text: text,
+    time: 'Щойно'
+  });
+  
+  LS.set(`comments_${q.id}`, customComments);
+  input.value = '';
+  renderComments(q.id);
+  showToast('💬 Коментар успішно додано!', 'success');
+}
+
+// Global hook to display stats on startup
+document.addEventListener('DOMContentLoaded', () => {
+  updateNavbarStats();
+});
+

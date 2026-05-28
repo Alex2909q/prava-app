@@ -1503,3 +1503,161 @@ body::after {
   position: relative;
   z-index: 1;
 }
+
+/* Gamification & Community Features styling */
+.nav-stat {
+  font-size: 13px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: var(--transition);
+}
+
+.nav-stat:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent-light);
+  transform: translateY(-1px);
+}
+
+/* Lock overlay on simulator card */
+.premium-card-lock-overlay {
+  background: rgba(15, 15, 26, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin: 16px 0;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Comments section styling */
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.comment-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  animation: scaleIn 0.3s ease both;
+  transition: var(--transition);
+}
+
+.comment-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.comment-author {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.comment-badge {
+  font-size: 9px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.comment-badge.expert {
+  background: var(--success-light);
+  color: var(--success);
+  border: 1px solid rgba(0, 208, 132, 0.25);
+}
+
+.comment-badge.student {
+  background: rgba(108, 99, 255, 0.12);
+  color: var(--accent-light);
+  border: 1px solid rgba(108, 99, 255, 0.2);
+}
+
+.comment-time {
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+.comment-text {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Pulse Bureaucratic Wiki grid */
+.pulse-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.pulse-card {
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.pulse-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-accent);
+  background: var(--bg-card-hover);
+  box-shadow: var(--shadow-glow);
+}
+
+/* Points float pop animation */
+.points-pop {
+  position: absolute;
+  color: var(--warning);
+  font-weight: 800;
+  font-size: 22px;
+  pointer-events: none;
+  z-index: 1000;
+  animation: pointsFloatUp 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  text-shadow: 0 0 12px rgba(255, 165, 2, 0.8), 0 0 4px #000;
+}
+
+@keyframes pointsFloatUp {
+  0% { opacity: 0; transform: translateY(0) scale(0.6); }
+  20% { opacity: 1; transform: translateY(-25px) scale(1.2); }
+  100% { opacity: 0; transform: translateY(-70px) scale(1); }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 8px !important;
+  }
+  .nav-stat {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+  .pulse-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
